@@ -739,6 +739,18 @@ header nav > div {
   background-image: url('/assets/img/hero_img/landing_page.jpeg');
 }
 
+.bg-\[url\(\'\.\/assets\/img\/hero_img\/about_page\.jpeg\'\)\] {
+  background-image: url('./assets/img/hero_img/about_page.jpeg');
+}
+
+.bg-\[url\(\'\.\/assets\/img\/hero_img\/job_assistance\.jpeg\'\)\] {
+  background-image: url('./assets/img/hero_img/job_assistance.jpeg');
+}
+
+.bg-\[url\(\'\.\/assets\/img\/hero_img\/landing_page\.jpeg\'\)\] {
+  background-image: url('./assets/img/hero_img/landing_page.jpeg');
+}
+
 .bg-cover {
   background-size: cover;
 }
