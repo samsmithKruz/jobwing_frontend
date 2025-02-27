@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Jobwings33">
+    <meta name="robots" content="index, follow">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <link rel="stylesheet" href="/assets/fonts/font.css">
+    <link rel="stylesheet" href="/assets/css/styles.css">
+    <link rel="icon" type="image/png" href="/assets/img/fav.png">
+
+
+    <title>Jobwings33 | Career Development & Recruitment Solutions</title>
+    <meta name="description"
+        content="Empowering career growth and business success through expert recruitment, career development, and skill acquisition. Find jobs, post jobs, and get professional training.">
+    <meta name="keywords"
+        content="career development, job recruitment, hiring solutions, skills training, job search, career coaching, professional development, mentorship">
+
+
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Jobwings33 | Career Development & Recruitment Solutions">
+    <meta property="og:description"
+        content="Find the best jobs, hire top talent, and advance your career with Jobwings33. Get professional training, career coaching, and recruitment services.">
+    <meta property="og:image" content="https://www.jobwings33.com/assets/jobwings-preview.jpg">
+    <meta property="og:url" content="https://www.jobwings33.com">
+    <meta property="og:site_name" content="Jobwings33">
+
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Jobwings33 | Career Development & Recruitment Solutions">
+    <meta name="twitter:description"
+        content="Explore job opportunities, recruitment services, career coaching, and skill development at Jobwings33.">
+    <meta name="twitter:image" content="https://www.jobwings33.com/assets/jobwings-preview.jpg">
+    <meta name="twitter:site" content="@Jobwings33">
+
+    <link rel="canonical" href="https://www.jobwings33.com">
+    <script type="application/ld+json">
+            {
+              "@context": "https://schema.org",
+              "@type": "Organization",
+              "name": "Jobwings33",
+              "url": "https://www.jobwings33.com",
+              "logo": "https://www.jobwings33.com/assets/jobwings-logo.png",
+              "description": "Empowering career growth and business success through expert recruitment, career development, and skill acquisition.",
+              "contactPoint": {
+                "@type": "ContactPoint",
+                "telephone": "+234XXXXXXXXXX",
+                "contactType": "customer service"
+              },
+              "sameAs": [
+                "https://www.facebook.com/jobwings33",
+                "https://www.linkedin.com/company/jobwings33"
+              ]
+            }
+            </script>
+
+</head>
+
+<body class="text-t_dark font-degular">
+    <!-- Header section  -->
+    <div id="overlay" class="fixed top-0 left-0 z-40 w-screen h-screen bg-black/40 backdrop-blur-sm"></div>
+    <header class="sticky top-0 z-50 flex flex-wrap items-center justify-between w-full max-w-screen-lg px-1 py-2 mx-auto bg-white/90 backdrop-blur-sm">
+        <a href="/home.html">
+            <img class="h-[4em] w-auto" src="/assets/img/jobwing_logo.png"
+                alt="Jobwings33 - Career Development & Recruitment Solutions"
+                title="Jobwings33 | Career Development & Recruitment" width="200" height="auto" loading="lazy">
+        </a>
+        <button id="menu" class="text-t_blue">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-[2em] w-[2em]" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+            </svg>
+        </button>
+
+        <nav>
+            <span id="close">&times;</span>
+            <a class="px-3 py-2" href="/services.html">Services</a>
+            <a class="px-3 py-2" href="/about.html">About Us</a>
+            <a class="px-3 py-2" href="/consult.html">Career Consultation</a>
+            <a class="px-3 py-2" href="/assistance.html">Job Assistance</a>
+            <div class="flex flex-wrap gap-2">
+                <a class="px-3 py-2 hover:text-t_blue" href="/hire.html">Hire</a>
+                <a class="px-3 py-2 text-xs text-white bg-t_blue" href="/find.html">Find a Job</a>
+            </div>
+        </nav>
+
+        <script>
+            let nav = document.querySelector('nav'),
+                menu = document.querySelector('#menu'),
+                navClose = document.querySelector('nav #close'),
+                overlay = document.querySelector('#overlay');
+            navClose.onclick = () => {
+                nav.classList.remove("active");
+            }
+            menu.onclick = () => {
+                nav.classList.toggle("active");
+            }
+            overlay.onclick = () => {
+                nav.classList.remove("active");
+            }
+
+        </script>
+
+    </header>
+    <!-- End Header section  -->
+
+    <!-- Hero section  -->
+    <section id="hero" class="text-white/95 text-left w-full bg-t_purple px-4 pb-32 flex items-start flex-col justify-center min-h-[350px] gap-2
+    bg-[url('/assets/img/hero_img/about_page.jpeg')] bg-center bg-cover bg-no-repeat bg-blend-multiply bg-fixed
+    pt-20
+    ">
+        <div class="w-full max-w-screen-lg mx-auto ">
+            <h4 class="max-w-[70ch] px-2 uppercase border-l-4 text-sm border-t_orange text-white/80">Who we are</h4>
+            <h1 class="max-w-[70ch] text-[3.5em] font-bold leading-[.9]  tracking-tight">About Us</h1>
+        </div>
+    </section>
+    <!-- End Hero section  -->
+
+    <!-- About Section -->
+    <section
+        class="relative grid max-w-screen-lg gap-4 p-8 mx-auto text-base bg-white shadow-md shadow-gray-100/90 -mt-14 md:grid-cols-3">
+        <div class="flex flex-col gap-2 md:col-span-1">
+            <h4 class="max-w-[70ch] px-2 uppercase border-l-4 text-sm border-t_orange ">Who we are</h4>
+            <h1 class="max-w-[70ch] text-3xl font-bold tracking-tight leading-[1.2]">
+                Your Trusted Career Development and Recruitment Partner
+            </h1>
+            <p class="text-sm text-t_dark/80">
+                JobWings33 is your trusted partner for career development and recruitment solutions.
+                We connect talented individuals with top companies, driving growth and success.
+            </p>
+        </div>
+        <div class="flex flex-col gap-2 text-sm md:col-span-2 text-t_dark/80">
+            <p>
+                We recognize that many young individuals aspire to elevate their careers. However, with
+                the ever-changing job market, some careers become obsolete, leading to
+                unemployment. That's where we step in.</p>
+            <p>
+                Our coaching and mentorship programs are designed to guide you in selecting a fulfilling
+                career path and securing your dream job. We also acknowledge that not everyone has
+                access to degree certificates, which is why we offer support in acquiring trade skills and
+                experience that enhance your employability. </p>
+            <p>
+                We understand the struggles of job loss and its impact on families. We're dedicated to
+                helping individuals secure their dream jobs, bringing joy and fulfillment to their lives.
+            </p>
+        </div>
+    </section>
+    <!-- End About Section -->
+    <!-- Career Section  -->
+    <section class="px-4 py-12 mt-8 text-center bg-t_navy text-white/90">
+        <div class="max-w-screen-lg py-12 mx-auto">
+            <h2 class="mb-2 text-3xl font-bold leading-tight text-white">Empowering Your Career</h2>
+            <div class="flex flex-col mt-8">
+                <div class="grid gap-4" style="grid-template-columns: repeat(auto-fill,minmax(200px,1fr));">
+                    <div class="flex flex-col gap-1 p-4 py-8 text-center bg-white shadow-md">
+                        <i class="text-4xl text-t_blue fas fa-briefcase fa-2x"></i>
+                        <h3 class="text-base font-semibold text-t_navy">Career Development</h3>
+                        <p class="text-sm text-t_dark/70">Guidance and support to help you achieve your career goals</p>
+                    </div>
+                    <div class="flex flex-col gap-1 p-4 py-8 text-center bg-white shadow-md">
+                        <i class="text-4xl text-t_blue fas fa-chalkboard-teacher fa-2x"></i>
+                        <h3 class="text-base font-semibold text-t_navy">Professional Training</h3>
+                        <p class="text-sm text-t_dark/70">Enhance your skills and knowledge with our training programs
+                        </p>
+                    </div>
+                    <div class="flex flex-col gap-1 p-4 py-8 text-center bg-white shadow-md">
+                        <i class="text-4xl text-t_blue fas fa-tools fa-2x"></i>
+                        <h3 class="text-base font-semibold text-t_navy">Skill Acquisition</h3>
+                        <p class="text-sm text-t_dark/70">Acquire the skills and experience needed to succeed in your
+                            career</p>
+                    </div>
+                    <div class="flex flex-col gap-1 p-4 py-8 text-center bg-white shadow-md">
+                        <i class="text-4xl text-t_blue fas fa-business-time fa-2x"></i>
+                        <h3 class="text-base font-semibold text-t_navy">Career Guidance</h3>
+                        <p class="text-sm text-t_dark/70">Expert advice and guidance to help you make informed career
+                            choices</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Career Section -->
+
+    <!-- Mission Section  -->
+    <section class="relative grid max-w-screen-lg p-8 mx-auto text-base bg-white gap-14 my-14 md:grid-cols-5">
+        <div class="flex flex-col gap-2 md:col-span-2">
+            <h1 class="max-w-[70ch] text-3xl font-bold tracking-tight leading-[1.2]">
+                Supporting Equal Access to Opportunities
+            </h1>
+            <p class="text-sm text-t_dark/80">
+                At Jobwings33, we believe everyone deserves access to career development and trade
+                skills acquisition, regardless of their background or financial means. We're committed to
+                supporting those with limited resources in achieving their career goals.
+            </p>
+        </div>
+        <div class="flex flex-col gap-2 text-sm md:col-span-3 text-t_dark/80">
+            <div>
+                <h3 class="mb-1 text-xl font-semibold leading-tight text-t_navy">Your Support Matters</h3>
+                <p>
+                    Your voluntary donation can help us continue providing essential services to those who
+                    need them most. To learn more about how to support us through donations or other
+                    means, please email us at donate@jobwings33.com. Your contribution will help bridge
+                    the gap and create a more inclusive and equitable opportunities for all.
+                </p>
+            </div>
+            <div>
+                <h3 class="mb-1 text-xl font-semibold leading-tight text-t_navy">Our Goal</h3>
+                <p>
+                    To become the go-to Career Development and Recruitment Solutions platform
+                    worldwide.
+                </p>
+            </div>
+        </div>
+    </section>
+    <!-- End Mission Section  -->
+
+    <!-- Values Section  -->
+    <section class="hidden px-4 py-12 bg-t_grey text-t_dark">
+        <div class="max-w-screen-lg py-12 mx-auto text-center">
+            <h2 class="text-3xl font-bold leading-tight mb-7 text-t_navy">Our Values</h2>
+            <div class="grid gap-3" style="grid-template-columns: repeat(auto-fill,minmax(200px,1fr));">
+                <div class="flex flex-col gap-1 px-4 py-8 text-center bg-white shadow-md">
+                    <i class="text-4xl text-t_blue fas fa-briefcase fa-2x"></i>
+                    <h3 class="text-base font-semibold">Recruitment Services</h3>
+                    <p class="text-sm text-t_dark/70">We provide top-notch recruitment services to help you find the
+                        best talent
+                        for your business.</p>
+                </div>
+                <div class="flex flex-col gap-1 px-4 py-8 text-center bg-white shadow-md">
+                    <i class="text-4xl text-t_blue fas fa-chalkboard-teacher fa-2x"></i>
+                    <h3 class="text-base font-semibold">Career Coaching</h3>
+                    <p class="text-sm text-t_dark/70">Our career coaching services are designed to help you achieve your
+                        professional goals.</p>
+                </div>
+                <div class="flex flex-col gap-1 px-4 py-8 text-center bg-white shadow-md">
+                    <i class="text-4xl text-t_blue fas fa-tools fa-2x"></i>
+                    <h3 class="text-base font-semibold">Skills Acquisition & Training</h3>
+                    <p class="text-sm text-t_dark/70">Enhance your skills with our comprehensive training programs.</p>
+                </div>
+                <div class="flex flex-col gap-1 px-4 py-8 text-center bg-white shadow-md">
+                    <i class="text-4xl text-t_blue fas fa-business-time fa-2x"></i>
+                    <h3 class="text-base font-semibold">Business & Employer Solutions</h3>
+                    <p class="text-sm text-t_dark/70">We offer tailored solutions to meet the unique needs of businesses
+                        and
+                        employers.</p>
+                </div>
+                <div class="flex flex-col gap-1 px-4 py-8 text-center bg-white shadow-md">
+                    <i class="text-4xl text-t_blue fas fa-search fa-2x"></i>
+                    <h3 class="text-base font-semibold">Job Search Assistance</h3>
+                    <p class="text-sm text-t_dark/70">Get assistance with your job search and find the right
+                        opportunities for
+                        your career.</p>
+                </div>
+                <div class="flex flex-col gap-1 px-4 py-8 text-center bg-white shadow-md">
+                    <i class="text-4xl text-t_blue fas fa-user-friends fa-2x"></i>
+                    <h3 class="text-base font-semibold">Mentorship Programs</h3>
+                    <p class="text-sm text-t_dark/70">Join our mentorship programs to gain valuable insights and
+                        guidance from
+                        industry experts.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Values Section  -->
+
+    <!-- Team Section  -->
+    <section class="flex flex-col gap-2 pt-12 text-center">
+        <h2 class="text-4xl font-bold leading-tight text-t_navy">Meet the Team</h2>
+        <p class="max-w-[70ch] mx-auto text-center">Our team of passionate experts is dedicated to transforming your career development
+            and recruitment experience.</p>
+        <div class="grid max-w-screen-lg gap-4 px-4 py-4 pb-12 mx-auto my-8"
+            style="grid-template-columns: repeat(auto-fill,minmax(200px,1fr));">
+            <div class="flex flex-col p-6 bg-t_navy rounded-bl-3xl rounded-tr-3xl">
+                <h3 class="text-2xl font-semibold text-white">Team of Expert </h3>
+                <p class="text-sm text-white/80">We tailor our approach to your unique needs, leveraging
+                    cutting-edge technology to streamline the job search process.</p>
+                <div class="flex flex-wrap gap-4 pt-4 mt-auto text-2xl text-t_green">
+                    <a href="#" class="fab fa-facebook"></a>
+                    <a href="#" class="fab fa-x-twitter"></a>
+                    <a href="#" class="fas fa-envelope"></a>
+                    <a href="#" class="fab fa-whatsapp"></a>
+                </div>
+            </div>
+            <div class="relative flex flex-col overflow-hidden rounded-bl-3xl rounded-tr-3xl group">
+                <img src="/assets/img/team/1.jpg" class="w-full h-[250px] object-cover" alt="">
+                <div class="flex flex-col gap-0 px-4 py-2 leading-tight bg-t_navy">
+                    <h3 class="text-xl font-semibold text-white ">James Bond</h3>
+                    <p class="mb-1 font-thin text-white/90">CEO, Jobwings33</p>
+                </div>
+                <div
+                    class="group-hover:top-0 duration-500 ease-in-out transition-all absolute left-0 z-10 w-full h-full p-4 overflow-y-auto top-[100%] bg-t_navy/60 backdrop-blur-md text-white/90">
+                    <h3 class="text-xl font-semibold text-white ">James Bond</h3>
+                    <p class="mb-4 font-thin ">CEO, Jobwings33</p>
+                    <p>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ullam tenetur ad facilis eveniet hic
+                        vel
+                        excepturi architecto quo eum repellat?
+                    </p>
+                    <div class="flex flex-wrap justify-center gap-4 pt-4 mt-auto text-2xl text-t_green">
+                        <a href="#" class="hover:scale-125 fab fa-facebook"></a>
+                        <a href="#" class="hover:scale-125 fab fa-x-twitter"></a>
+                        <a href="#" class="hover:scale-125 fas fa-envelope"></a>
+                        <a href="#" class="hover:scale-125 fab fa-whatsapp"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="relative flex flex-col overflow-hidden rounded-bl-3xl rounded-tr-3xl group">
+                <img src="/assets/img/team/1.jpg" class="w-full h-[250px] object-cover" alt="">
+                <div class="flex flex-col gap-0 px-4 py-2 leading-tight bg-t_navy">
+                    <h3 class="text-xl font-semibold text-white ">James Bond</h3>
+                    <p class="mb-1 font-thin text-white/90">CEO, Jobwings33</p>
+                </div>
+                <div
+                    class="group-hover:top-0 duration-500 ease-in-out transition-all absolute left-0 z-10 w-full h-full p-4 overflow-y-auto top-[100%] bg-t_navy/60 backdrop-blur-md text-white/90">
+                    <h3 class="text-xl font-semibold text-white ">James Bond</h3>
+                    <p class="mb-4 font-thin ">CEO, Jobwings33</p>
+                    <p>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ullam tenetur ad facilis eveniet hic
+                        vel
+                        excepturi architecto quo eum repellat?
+                    </p>
+                    <div class="flex flex-wrap justify-center gap-4 pt-4 mt-auto text-2xl text-t_green">
+                        <a href="#" class="hover:scale-125 fab fa-facebook"></a>
+                        <a href="#" class="hover:scale-125 fab fa-x-twitter"></a>
+                        <a href="#" class="hover:scale-125 fas fa-envelope"></a>
+                        <a href="#" class="hover:scale-125 fab fa-whatsapp"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="relative flex flex-col overflow-hidden rounded-bl-3xl rounded-tr-3xl group">
+                <img src="/assets/img/team/1.jpg" class="w-full h-[250px] object-cover" alt="">
+                <div class="flex flex-col gap-0 px-4 py-2 leading-tight bg-t_navy">
+                    <h3 class="text-xl font-semibold text-white ">James Bond</h3>
+                    <p class="mb-1 font-thin text-white/90">CEO, Jobwings33</p>
+                </div>
+                <div
+                    class="group-hover:top-0 duration-500 ease-in-out transition-all absolute left-0 z-10 w-full h-full p-4 overflow-y-auto top-[100%] bg-t_navy/60 backdrop-blur-md text-white/90">
+                    <h3 class="text-xl font-semibold text-white ">James Bond</h3>
+                    <p class="mb-4 font-thin ">CEO, Jobwings33</p>
+                    <p>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ullam tenetur ad facilis eveniet hic
+                        vel
+                        excepturi architecto quo eum repellat?
+                    </p>
+                    <div class="flex flex-wrap justify-center gap-4 pt-4 mt-auto text-2xl text-t_green">
+                        <a href="#" class="hover:scale-125 fab fa-facebook"></a>
+                        <a href="#" class="hover:scale-125 fab fa-x-twitter"></a>
+                        <a href="#" class="hover:scale-125 fas fa-envelope"></a>
+                        <a href="#" class="hover:scale-125 fab fa-whatsapp"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Team Section  -->
+
+
+    <!-- Join our community  -->
+    <section class="relative">
+        <div class="flex flex-col items-center gap-1 py-20 mx-auto mb-12 bg-t_green">
+            <h3 class="text-3xl font-bold">Join Our Community</h3>
+            <p class="max-w-[70ch] mx-auto text-center">
+                Whether you're a job seeker or employer, we invite you to join JobWings33 today.
+                Let us help you navigate the job market and unlock your full potential.
+            </p>
+            <a href="#" class="px-5 py-2 mt-4 text-white bg-t_blue">Join Now</a>
+        </div>
+        <div class="relative grid max-w-screen-md gap-5 p-1 mx-auto -mt-24 bg-white shadow-lg md:grid-cols-3">
+            <div class="p-4 text-white md:col-span-1 bg-t_blue">
+                <h2 class="mb-2 text-xl font-medium leading-tight text-white ">Contact Information</h2>
+                <p class="mb-4 font-thin">Let us connect you with the right job opportunities.
+                <p>
+                <div class="flex gap-2 mb-2 item-start">
+                    <i class="fas fa-phone"></i>
+                    <p>+234 903 8036 844</p>
+                </div>
+                <div class="flex gap-2 mb-2 item-start">
+                    <i class="fas fa-phone"></i>
+                    <p>+234 903 8036 844</p>
+                </div>
+                <div class="flex gap-2 mb-2 item-start">
+                    <i class="fas fa-phone"></i>
+                    <p>+234 903 8036 844</p>
+                </div>
+            </div>
+            <form action="" class="flex flex-col gap-4 p-4 md:col-span-2">
+                <div class="flex flex-wrap w-full gap-6">
+                    <div class="flex flex-col flex-auto">
+                        <label for="firstname" class="text-sm font-light">First Name</label>
+                        <input type="text" class="px-4 pl-0 font-bold border-b-2 outline-none border-slate-600"
+                            placeholder="Enter your first name.">
+                    </div>
+                    <div class="flex flex-col flex-auto">
+                        <label for="firstname" class="text-sm font-light">Last Name</label>
+                        <input type="text" class="px-4 pl-0 font-bold border-b-2 outline-none border-slate-600"
+                            placeholder="Enter your last name.">
+                    </div>
+                </div>
+                <div class="flex flex-col w-full">
+                    <label for="firstname" class="text-sm font-light">Subject</label>
+                    <input type="text" class="px-4 pl-0 font-bold border-b-2 outline-none border-slate-600"
+                        placeholder="Enter your subject here.">
+                </div>
+                <div class="flex flex-col w-full">
+                    <label for="firstname" class="text-sm font-light">Message</label>
+                    <textarea name="" id="" rows="5"
+                        class="px-4 pl-0 font-bold border-b-2 outline-none resize-none border-slate-600"
+                        placeholder="Enter your message here"></textarea>
+                </div>
+                <button type="submit" class="self-start px-5 py-2 mt-2 text-white bg-t_blue">Send Message</button>
+
+
+            </form>
+        </div>
+
+    </section>
+    <!-- End Get in touch section  -->
+
+
+
+    <!-- FAQ Section  -->
+    <section class="grid max-w-screen-lg gap-8 mx-auto my-40 md:grid-cols-2">
+        <img src="/assets/img/about.png" class="object-contain w-[80%] h-auto" alt="">
+        <div class="flex flex-col gap-1 p-4">
+            <h5 class="text-xs font-semibold text-t_red">FAQ</h5>
+            <h2 class="mb-0 text-2xl font-semibold">Frequency Ask Questions</h2>
+            <p class="mb-4 text-sm">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Earum, eaque ipsam. Quisquam eligendi, ullam
+                tempora quasi quo incidunt sequi dicta?
+            </p>
+            <div class="space-y-2">
+                <div class="overflow-hidden border rounded-lg">
+                    <input type="checkbox" name="accordion" id="faq1" class="hidden peer">
+                    <label for="faq1"
+                        class="flex items-center justify-between block w-full p-4 bg-white cursor-pointer">
+                        <span class="font-medium">What is this about?</span>
+                        <span class="transition-transform peer-checked:rotate-180">&#9660;</span>
+                    </label>
+                    <div class="hidden p-4 peer-checked:block bg-gray-50">This is a simple FAQ accordion using Tailwind
+                        CSS.</div>
+                </div>
+                <div class="overflow-hidden border rounded-lg">
+                    <input type="checkbox" name="accordion" id="faq2" class="hidden peer">
+                    <label for="faq2"
+                        class="flex items-center justify-between block w-full p-4 bg-white cursor-pointer">
+                        <span class="font-medium">How does it work?</span>
+                        <span class="transition-transform peer-checked:rotate-180">&#9660;</span>
+                    </label>
+                    <div class="hidden p-4 peer-checked:block bg-gray-50">Clicking a question expands the answer below
+                        it.</div>
+                </div>
+                <div class="overflow-hidden border rounded-lg">
+                    <input type="checkbox" name="accordion" id="faq3" class="hidden peer">
+                    <label for="faq3"
+                        class="flex items-center justify-between block w-full p-4 bg-white cursor-pointer">
+                        <span class="font-medium">Is Tailwind required?</span>
+                        <span class="transition-transform peer-checked:rotate-180">&#9660;</span>
+                    </label>
+                    <div class="hidden p-4 peer-checked:block bg-gray-50">Yes, Tailwind is used for styling in this
+                        example.</div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <!-- End FAQ Section  -->
+
+
+    <!-- Newsletter Section  -->
+    <section
+        class="relative flex flex-wrap items-center justify-between max-w-screen-md gap-4 p-4 mx-auto -mb-10 bg-t_red">
+        <div class="flex gap-2 flex-start">
+            <span class="font-icomoon"></span>
+            <div>
+                <h4 class="text-base font-medium text-white">Subscribe to Newsletter</h4>
+                <p class="max-w-[35ch] text-t_grey text-sm leading-tight">Subscribe to our newsletter for the latest
+                    updates and promotions.</p>
+            </div>
+        </div>
+        <div class="relative flex">
+            <input type="email" placeholder="Enter your email address" class="px-4 py-2 bg-white outline-none">
+            <button class="px-4 py-2 text-xs bg-t_green">Subscribe Now</button>
+        </div>
+    </section>
+    <!-- End Newsletter Section  -->
+
+    <!-- Footer Section -->
+    <footer class="pt-12 bg-t_navy text-white/80">
+        <div class="grid max-w-screen-lg gap-8 px-4 py-12 mx-auto text-sm sm:grid-cols-2 md:grid-cols-9">
+            <div class="md:col-span-3">
+                <img src="/assets/img/jobwing_logo.png" alt="Jobwings33 - Career Development & Recruitment Solutions"
+                    class="h-[4em] w-auto" loading="lazy">
+                <p class="text-white/80 max-w-[30ch]">Empowering career growth and business success through expert
+                    recruitment, career development, and skill acquisition.</p>
+            </div>
+            <div class="md:col-span-2 leading-[1]">
+                <h4 class="text-base font-semibold text-white uppercase">Quick Links</h4>
+                <div class="h-[0.2em] w-20 max-w-1/2 bg-[#ff671b]"></div>
+                <ul class="flex flex-col gap-2 mt-2">
+                    <li><a href="#" class="hover:text-white">Home</a></li>
+                    <li><a href="#" class="hover:text-white">About Us</a></li>
+                    <li><a href="#" class="hover:text-white">Career Consultation</a></li>
+                    <li><a href="#" class="hover:text-white">Job Assistance</a></li>
+                    <li><a href="#" class="hover:text-white">Hire</a></li>
+                    <li><a href="#" class="hover:text-white">Find a Job</a></li>
+                </ul>
+            </div>
+            <div class="md:col-span-2 leading-[1]">
+                <h4 class="text-base font-semibold text-white uppercase">Services</h4>
+                <div class="h-[0.2em] w-20 max-w-1/2 bg-[#ff671b]"></div>
+                <ul class="flex flex-col gap-2 mt-2">
+                    <li><a href="#" class="hover:text-white">Recruitment Services</a></li>
+                    <li><a href="#" class="hover:text-white">Career Coaching</a></li>
+                    <li><a href="#" class="hover:text-white">Skills Acquisition & Training</a></li>
+                    <li><a href="#" class="hover:text-white">Business & Employer Solutions</a></li>
+                </ul>
+            </div>
+            <div class="md:col-span-2 leading-[1]">
+                <h4 class="text-base font-semibold text-white uppercase">Contact Us</h4>
+                <div class="h-[0.2em] w-20 max-w-1/2 bg-[#ff671b]"></div>
+                <ul class="flex flex-col gap-2 mt-2">
+                    <li><span class="font-icomoon"></span> +234 903 8036 844</li>
+                    <li><span class="font-icomoon"></span> +234 903 8036 844</li>
+                    <li><span class="font-icomoon"></span> +234 903 8036 844</li>
+                </ul>
+            </div>
+        </div>
+        <div class="flex flex-wrap justify-between max-w-screen-lg gap-4 p-4 mx-auto text-sm">
+            <p class="text-center text-white/80">© 2021 Jobwings33. All rights reserved.</p>
+            <div class="flex flex-wrap gap-2">
+                <a href="#" class="text-white/80 hover:text-white">Privacy Policy</a>
+                <a href="#" class="text-white/80 hover:text-white">Terms of Service</a>
+            </div>
+        </div>
+    </footer>
+    <!-- End Footer Section -->
+</body>
+
+</html>

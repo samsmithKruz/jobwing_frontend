@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/icomoon@1.0.0/style.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/fonts/font.css">
+    <link rel="stylesheet" href="./assets/css/styles.css">
+</head>
+
+<body class="flex items-start justify-center p-8 text-t_dark font-degular bg-slate-50 h-svh">
+    <div class="max-w-[700px] relative max-h-full w-full shadow-lg shadow-slate-200 rounded-lg overflow-auto scrollbar-thin">
+        <h1 class="top-0 sticky bg-white shadow-sm py-4 px-8 font-[500] text-2xl">Available Frontend Pages <span
+                class="text-sm font-normal">(54)</span></h1>
+        <div id="link-wrapper" class="grid gap-4 p-4 bg-slate-100/50"
+            style="grid-template-columns: repeat(auto-fill,minmax(150px,1fr));">
+
+        </div>
+    </div>
+</body>
+
+<script>
+    let links = [
+        {
+            'name': 'Home',
+            'url': 'home.html',
+            'date': '20-02-2025',
+        },
+        {
+            'name': 'About',
+            'url': 'about.html',
+            'date': '22-02-2025',
+        },
+        {
+            'name': 'Services',
+            'url': 'services.html',
+            'date': '23-02-2025',
+        },
+        {
+            'name': 'Consultaion',
+            'url': 'consult.html',
+            'date': '24-02-2025',
+        },
+        {
+            'name': 'Job Assistance',
+            'url': 'assistance.html',
+            'date': '24-02-2025',
+        },
+        {
+            'name': 'Job Search',
+            'url': 'find.html',
+            'date': '24-02-2025',
+        },
+        {
+            'name': 'Hire',
+            'url': 'hire.html',
+            'date': '24-02-2025',
+        },
+        {
+            'name': 'Privacy',
+            'url': 'privacy.html',
+            'date': '24-02-2025',
+        },
+    ],
+        box = ({ url, name }) => `
+            <a href="${url}"
+                class="flex flex-col items-center justify-center p-4 text-center transition-all duration-300 ease-linear bg-white rounded-lg group hover:shadow-sm shadow-slate-100">
+                <span
+                    class="text-3xl transition-all duration-100 ease-linear font-icomoon group-hover:text-t_green">&#xe894;</span>
+                <span class="text-slate-700">${name}</span>
+            </a>
+    `;
+    document.querySelector('#link-wrapper').innerHTML = links.map(({ url, name }) => box({ name, url })).join('');
+    document.querySelector('h1 span').textContent = `(${links.length})`;
+</script>
+
+</html>

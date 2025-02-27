@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Jobwings33">
+    <meta name="robots" content="index, follow">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <link rel="stylesheet" href="/assets/fonts/font.css">
+    <link rel="stylesheet" href="/assets/css/styles.css">
+    <link rel="icon" type="image/png" href="/assets/img/fav.png">
+
+
+    <title>Jobwings33 | Career Development & Recruitment Solutions</title>
+    <meta name="description"
+        content="Empowering career growth and business success through expert recruitment, career development, and skill acquisition. Find jobs, post jobs, and get professional training.">
+    <meta name="keywords"
+        content="career development, job recruitment, hiring solutions, skills training, job search, career coaching, professional development, mentorship">
+
+
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Jobwings33 | Career Development & Recruitment Solutions">
+    <meta property="og:description"
+        content="Find the best jobs, hire top talent, and advance your career with Jobwings33. Get professional training, career coaching, and recruitment services.">
+    <meta property="og:image" content="https://www.jobwings33.com/assets/jobwings-preview.jpg">
+    <meta property="og:url" content="https://www.jobwings33.com">
+    <meta property="og:site_name" content="Jobwings33">
+
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Jobwings33 | Career Development & Recruitment Solutions">
+    <meta name="twitter:description"
+        content="Explore job opportunities, recruitment services, career coaching, and skill development at Jobwings33.">
+    <meta name="twitter:image" content="https://www.jobwings33.com/assets/jobwings-preview.jpg">
+    <meta name="twitter:site" content="@Jobwings33">
+
+    <link rel="canonical" href="https://www.jobwings33.com">
+    <script type="application/ld+json">
+            {
+              "@context": "https://schema.org",
+              "@type": "Organization",
+              "name": "Jobwings33",
+              "url": "https://www.jobwings33.com",
+              "logo": "https://www.jobwings33.com/assets/jobwings-logo.png",
+              "description": "Empowering career growth and business success through expert recruitment, career development, and skill acquisition.",
+              "contactPoint": {
+                "@type": "ContactPoint",
+                "telephone": "+234XXXXXXXXXX",
+                "contactType": "customer service"
+              },
+              "sameAs": [
+                "https://www.facebook.com/jobwings33",
+                "https://www.linkedin.com/company/jobwings33"
+              ]
+            }
+            </script>
+
+</head>
+
+<body class="text-t_dark font-degular">
+    <!-- Header section  -->
+    <div id="overlay" class="fixed top-0 left-0 z-40 w-screen h-screen bg-black/40 backdrop-blur-sm"></div>
+    <header
+        class="flex flex-wrap items-center justify-between w-full max-w-screen-lg px-1 py-2 mx-auto bg-white/90 backdrop-blur-sm">
+        <a href="/home.html">
+            <img class="h-[4em] w-auto" src="/assets/img/jobwing_logo.png"
+                alt="Jobwings33 - Career Development & Recruitment Solutions"
+                title="Jobwings33 | Career Development & Recruitment" width="200" height="auto" loading="lazy">
+        </a>
+        <button id="menu" class="text-t_blue">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-[2em] w-[2em]" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+            </svg>
+        </button>
+
+        <nav>
+            <span id="close">&times;</span>
+            <a class="px-3 py-2" href="/services.html">Services</a>
+            <a class="px-3 py-2" href="/about.html">About Us</a>
+            <a class="px-3 py-2" href="/consult.html">Career Consultation</a>
+            <a class="px-3 py-2" href="/assistance.html">Job Assistance</a>
+            <div class="flex flex-wrap gap-2">
+                <a class="px-3 py-2 hover:text-t_blue" href="/hire.html">Hire</a>
+                <a class="px-3 py-2 text-xs text-white bg-t_blue" href="/find.html">Find a Job</a>
+            </div>
+        </nav>
+
+        <script>
+            let nav = document.querySelector('nav'),
+                menu = document.querySelector('#menu'),
+                navClose = document.querySelector('nav #close'),
+                overlay = document.querySelector('#overlay');
+            navClose.onclick = () => {
+                nav.classList.remove("active");
+            }
+            menu.onclick = () => {
+                nav.classList.toggle("active");
+            }
+            overlay.onclick = () => {
+                nav.classList.remove("active");
+            }
+
+        </script>
+
+    </header>
+    <!-- End Header section  -->
+
+    <!-- Hero section  -->
+    <section id="hero" class="text-white/95 text-left w-full bg-t_purple px-4 flex items-start flex-col justify-center gap-2
+    bg-[url('/assets/img/hero_img/about_page.jpeg')] bg-center bg-cover bg-no-repeat bg-blend-multiply bg-fixed
+    py-20
+    ">
+        <div class="flex flex-col items-center w-full max-w-screen-lg mx-auto text-center">
+            <h4 class="max-w-[70ch] px-2 uppercase border-l-4 text-sm border-t_orange text-white/80">
+                Welcome to Jobwings33
+            </h4>
+            <h1 class="max-w-[70ch] text-[3.5em] font-bold leading-[.9]  tracking-tight">
+                Privacy Policy
+            </h1>
+        </div>
+    </section>
+    <!-- End Hero section  -->
+
+    <!-- Privacy Policy Section  -->
+    <section class="items-start max-w-screen-lg px-4 py-10 mx-auto my-6 ">
+        <div class="max-w-2xl p-12 mx-auto bg-white rounded-lg shadow-lg">
+            <h3 class="mt-4 text-2xl font-bold text-center capitalize">Introduction</h3>
+            <p class="mb-2">
+                JobWings33 is your trusted partner for career development and recruitment solutions.
+                We connect talented individuals with top companies, driving growth and success.. This
+                privacy policy explains how we collect, use, and share your personal data when you
+                visits our website or use our services.
+            </p>
+            <h4 class="mt-4 text-xl font-bold ">Data We Collect</h4>
+            <p class="mb-2">
+                We collect data in the following ways:
+            </p>
+            <ul class="pl-6 mb-2 list-disc">
+
+                <li>When you sync your address book or calendar</li>
+                <li>When you post or upload content</li>
+                <li>When you communicate with others through our services</li>
+                <li>When you visit our sites or use our apps</li>
+                <li>When others provide data about you (e.g. employers or partners)</li>
+            </ul>
+            <h4 class="mt-4 text-xl font-bold ">How We Use Your Data</h4>
+            <p class="mb-2">
+                We use your data to:
+            </p>
+            <ul class="pl-6 mb-2 list-disc">
+                <li>Provide and personalize our services</li>
+                <li>Authorize access to our services</li>
+                <li>Help you connect with others</li>
+                <li>Send you messages and notifications</li>
+                <li>Serve you targeted ads</li>
+                <li>Develop and improve our services</li>
+                <li>Conduct research and analysis</li>
+                <li>Provide customer support</li>
+                <li>Ensure security and prevent fraud◊</li>
+            </ul>
+            <h4 class="mt-4 text-xl font-bold ">How We Share Information</h4>
+            <p class="mb-2">
+                We share your data:
+            </p>
+            <ul class="pl-6 mb-2 list-disc">
+                <li>With others on our services (e.g. profile visible to employers)</li>
+                <li>With our affiliates and related services</li>
+                <li>With service providers (e.g. maintenance, analysis)</li>
+                <li>When required by law or to protect rights and safety</li>
+            </ul>
+            <h4 class="mt-4 text-xl font-bold ">Your Choices and Obligations</h4>
+            <p class="mb-2">
+                You have choices about the data we collect and how we use it. You can:
+            </p>
+            <ul class="pl-6 mb-2 list-disc">
+                <li>Opt-out of targeted ads</li>
+                <li>Unsubscribe from messages and notifications</li>
+            </ul>
+            <h4 class="mt-4 text-xl font-bold uppercase">Your Privacy Matters to Us</h4>
+            <p class="mb-2">
+                At Jobwings33, we prioritize safeguarding and respecting your privacy. This Privacy
+                Policy outlines how any personal data we collect from you or that you provide to us will
+                be handled on our website and associated apps. We understand the significance of
+                securely storing and utilizing the basic information gathered when you browse our
+                website. You have the option to provide information that is classified as personal data,
+                such as your name, email address, mailing address, telephone number, or any data that
+                can identify you. The term "personal data" in this Policy pertains to details used for
+                identification purposes, and it encompasses our website.
+            </p>
+            <h4 class="mt-4 text-xl font-bold">MANAGING YOUR DATA</h4>
+            <p class="mb-2">
+                JobWings33 is your trusted partner for career development and recruitment solutions.
+                Supporting Job seekers in their job search and assisting employers with hiring needs. By
+                engaging with our website, you agree to the storage of your personal data on servers in
+                the United States/ Nigeria and its collection, processing, transfer, and storage by the
+                JobWing- SKILLEDHUNT Team across different countries. The entity responsible for
+                your personal data varies based on your interactions with the website, be it making a
+                Payment, donation or initiating contact through unsolicited applications.
+            </p>
+            <h4 class="mt-4 text-xl font-bold">SECURING YOUR DATA</h4>
+            <p class="mb-2">
+                The security and confidentiality of your personal data are paramount to us. We
+                implement advanced data storage and security protocols to safeguard your information
+                from unauthorized access or misuse. All personnel handling personal data and third
+                parties involved in processing your information are bound by confidentiality agreements.
+                Your personal data is retained for a reasonable time or to comply with legal obligations.
+            </p>
+            <h4 class="mt-4 text-xl font-bold">PROTECTING MINORS</h4>
+            <p class="mb-2">
+                Minors accessing our website must have parental consent to submit personal data.
+                Parents or guardians providing consent uphold this Policy concerning minors' data
+                submission.
+            </p>
+            <h4 class="mt-4 text-xl font-bold">LINKS TO THIRD PARTIES</h4>
+            <p class="mb-2">
+                Our website may include links to third-party services. While we review third parties'
+                privacy policies, we do not govern their apps or services. Hence, it is advisable to review
+                their terms before engaging with them.
+            </p>
+            <h4 class="mt-4 text-xl font-bold">ACTIVE SCRIPTING & JAVASCRIPT</h4>
+            <p class="mb-2">
+                We employ scripting to enhance website functionality, ensuring swift information
+                delivery to you. Neither scripting technology installs software nor extracts unauthorized
+                data from your device. Enabling JavaScript boosts optimal website performance, and
+                most browsers allow it to be enabled or disabled for specific sites.
+            </p>
+            <h4 class="mt-4 text-xl font-bold">UPDATING YOU ON CHANGES</h4>
+            <p class="mb-2">
+                As we continuously enhance our services, including adding new features, any
+                modifications to our Policy will be promptly communicated on this page. Be informed of
+                the information collected and utilized through our Policy updates.
+            </p>
+            <h4 class="mt-4 text-xl font-bold">Contact Us</h4>
+            <p class="mb-2">
+                If you have questions or concerns, please contact us at
+                mailto:support@jobwings33.com
+            </p>
+
+        </div>
+
+
+    </section>
+    <!-- End Privacy Policy Section  -->
+
+
+
+
+
+
+    <!-- Footer Section -->
+    <footer class=" bg-t_navy text-white/80">
+        <div class="grid max-w-screen-lg gap-8 px-4 py-12 mx-auto text-sm sm:grid-cols-2 md:grid-cols-9">
+            <div class="md:col-span-3">
+                <img src="/assets/img/jobwing_logo.png" alt="Jobwings33 - Career Development & Recruitment Solutions"
+                    class="h-[4em] w-auto" loading="lazy">
+                <p class="text-white/80 max-w-[30ch]">Empowering career growth and business success through expert
+                    recruitment, career development, and skill acquisition.</p>
+            </div>
+            <div class="md:col-span-2 leading-[1]">
+                <h4 class="text-base font-semibold text-white uppercase">Quick Links</h4>
+                <div class="h-[0.2em] w-20 max-w-1/2 bg-[#ff671b]"></div>
+                <ul class="flex flex-col gap-2 mt-2">
+                    <li><a href="#" class="hover:text-white">Home</a></li>
+                    <li><a href="#" class="hover:text-white">About Us</a></li>
+                    <li><a href="#" class="hover:text-white">Career Consultation</a></li>
+                    <li><a href="#" class="hover:text-white">Job Assistance</a></li>
+                    <li><a href="#" class="hover:text-white">Hire</a></li>
+                    <li><a href="#" class="hover:text-white">Find a Job</a></li>
+                </ul>
+            </div>
+            <div class="md:col-span-2 leading-[1]">
+                <h4 class="text-base font-semibold text-white uppercase">Services</h4>
+                <div class="h-[0.2em] w-20 max-w-1/2 bg-[#ff671b]"></div>
+                <ul class="flex flex-col gap-2 mt-2">
+                    <li><a href="#" class="hover:text-white">Recruitment Services</a></li>
+                    <li><a href="#" class="hover:text-white">Career Coaching</a></li>
+                    <li><a href="#" class="hover:text-white">Skills Acquisition & Training</a></li>
+                    <li><a href="#" class="hover:text-white">Business & Employer Solutions</a></li>
+                </ul>
+            </div>
+            <div class="md:col-span-2 leading-[1]">
+                <h4 class="text-base font-semibold text-white uppercase">Contact Us</h4>
+                <div class="h-[0.2em] w-20 max-w-1/2 bg-[#ff671b]"></div>
+                <ul class="flex flex-col gap-2 mt-2">
+                    <li><span class="font-icomoon"></span> +234 903 8036 844</li>
+                    <li><span class="font-icomoon"></span> +234 903 8036 844</li>
+                    <li><span class="font-icomoon"></span> +234 903 8036 844</li>
+                </ul>
+            </div>
+        </div>
+        <div class="flex flex-wrap justify-between max-w-screen-lg gap-4 p-4 mx-auto text-sm">
+            <p class="text-center text-white/80">© 2021 Jobwings33. All rights reserved.</p>
+            <div class="flex flex-wrap gap-2">
+                <a href="#" class="text-white/80 hover:text-white">Privacy Policy</a>
+                <a href="#" class="text-white/80 hover:text-white">Terms of Service</a>
+            </div>
+        </div>
+    </footer>
+    <!-- End Footer Section -->
+</body>
+
+</html>

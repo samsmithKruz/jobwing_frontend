@@ -1,0 +1,91 @@
+@tailwind components;
+@tailwind utilities;
+@tailwind base;
+@tailwind variants;
+
+@layer utilities {
+  .scrollbar-thin::-webkit-scrollbar {
+    width: 6px;
+  }
+  .scrollbar-thin::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  .scrollbar-thin::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 3px;
+  }
+  .scrollbar-thin::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+}
+@layer components {
+  header nav {
+    @apply flex gap-2 text-sm flex-wrap items-center;
+  }
+  header nav > span {
+    @apply cursor-pointer hidden w-full;
+  }
+  #overlay {
+    @apply hidden;
+  }
+  header button {
+    @apply cursor-pointer hidden;
+  }
+  header nav > a:hover {
+    @apply text-t_blue;
+  }
+  header nav > div {
+    @apply items-center;
+  }
+  @media (max-width: theme("screens.m780")) {
+    header a > img {
+      @apply h-[3em] !important;
+    }
+    header button {
+      @apply block;
+    }
+    body:has(header nav.active) #overlay {
+      @apply block;
+    }
+    header nav > div {
+      @apply flex-col items-stretch;
+    }
+    header button {
+      @apply block;
+    }
+    header nav > span {
+      @apply block px-3;
+    }
+    header nav {
+      @apply fixed duration-300 transition-all ease-in-out top-0 bg-white z-50 flex-col flex-wrap h-screen w-full max-w-[250px] p-3 py-6 right-[-100%] items-stretch;
+    }
+    header nav.active {
+      @apply right-0;
+    }
+  }
+  @media (max-width: theme("screens.sm")) {
+    section#hero h1 {
+      @apply text-[2em] pt-5 !important;
+    }
+  }
+  .grid-fluid {
+    --fluid: 300px;
+    grid-template-columns: repeat(auto-fill, minmax(var(--fluid), 1fr));
+  }
+  #job_list {
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  }
+  #job_list.rows{
+    grid-template-columns: 1fr;
+
+  }
+}
+
+@layer utilities {
+  .line-clamp-2 {
+    @apply overflow-hidden text-ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2; /* Adjust for the number of lines you want */
+    -webkit-box-orient: vertical;
+  }
+}

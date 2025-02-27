@@ -1,0 +1,109 @@
+@font-face {
+  font-family: "DegularDemo";
+  src: url("/assets/fonts/DegularDemo-Regular.otf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "DegularDemo";
+  src: url("/assets/fonts/DegularDemo-Bold.otf") format("opentype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "DegularDemo";
+  src: url("/assets/fonts/DegularDemo-Italic.otf") format("opentype");
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "DegularDemo";
+  src: url("/assets/fonts/DegularDemo-BoldItalic.otf") format("opentype");
+  font-weight: 700;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "DegularDemo";
+  src: url("/assets/fonts/DegularDemo-Black.otf") format("opentype");
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "DegularDemo";
+  src: url("/assets/fonts/DegularDemo-BlackItalic.otf") format("opentype");
+  font-weight: 900;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "DegularDemo";
+  src: url("/assets/fonts/DegularDemo-Light.otf") format("opentype");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "DegularDemo";
+  src: url("/assets/fonts/DegularDemo-LightItalic.otf") format("opentype");
+  font-weight: 300;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "DegularDemo";
+  src: url("/assets/fonts/DegularDemo-Medium.otf") format("opentype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "DegularDemo";
+  src: url("/assets/fonts/DegularDemo-MediumItalic.otf") format("opentype");
+  font-weight: 500;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "DegularDemo";
+  src: url("/assets/fonts/DegularDemo-Semibold.otf") format("opentype");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "DegularDemo";
+  src: url("/assets/fonts/DegularDemo-SemiboldItalic.otf") format("opentype");
+  font-weight: 600;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "DegularDemo";
+  src: url("/assets/fonts/DegularDemo-Thin.otf") format("opentype");
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "DegularDemo";
+  src: url("/assets/fonts/DegularDemo-ThinItalic.otf") format("opentype");
+  font-weight: 100;
+  font-style: italic;
+}
+@font-face {
+  font-family: "icomoon";
+  src: url("/assets/fonts/icomoon.ttf") format("truetype");
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
