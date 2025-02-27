@@ -1158,6 +1158,10 @@ header nav > div {
   color: rgb(49 55 67 / 0.5);
 }
 
+.text-t_dark\/60 {
+  color: rgb(49 55 67 / 0.6);
+}
+
 .bg-blend-multiply {
   background-blend-mode: multiply;
 }
