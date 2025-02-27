@@ -7,6 +7,7 @@
     <meta name="author" content="Jobwings33">
     <meta name="robots" content="index, follow">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- Link Swiper's CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <!-- Font Awesome CDN -->
@@ -130,7 +131,7 @@
 
     <!-- Consultation Section  -->
     <section class="grid items-start max-w-screen-lg gap-8 px-4 py-10 mx-auto my-6 md:grid-cols-2">
-        <form action="">
+        <form action=""data-aos="zoom-in-down"  >
             <h2 class="mb-4 text-2xl font-semibold text-center text-gray-800">Job Assistance Form</h2>
 
             <label class="block text-sm font-medium text-gray-700">Full Name</label>
@@ -184,7 +185,7 @@
             <button type="submit"
                 class="w-full p-2 text-white transition bg-blue-600 rounded-md hover:bg-blue-700">Submit</button>
         </form>
-        <div class="relative flex flex-col gap-4 p-3 text-t_dark/90">
+        <div data-aos="zoom-in-down" data-aos-delay="200" class="relative flex flex-col gap-4 p-3 text-t_dark/90">
             <img src="./assets/img/hero_img/job_assistance.jpeg" class="w-full h-[200px] object-cover" alt="">
             <h2 class="text-2xl font-semibold text-t_navy">Job Assistance</h2>
             <p class="">We provide job assistance services to help you find the right job that suits
@@ -334,5 +335,12 @@
     </footer>
     <!-- End Footer Section -->
 </body>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init({
+        startEvent: 'DOMContentLoaded',
+        easing: 'ease',
+    });
+</script>
 
 </html>

@@ -218,6 +218,11 @@ header nav > div {
   margin-bottom: 2rem;
 }
 
+.my-3 {
+  margin-top: 0.75rem;
+  margin-bottom: 0.75rem;
+}
+
 .-mb-10 {
   margin-bottom: -2.5rem;
 }
@@ -349,6 +354,14 @@ header nav > div {
   height: 100svh;
 }
 
+.h-1 {
+  height: 0.25rem;
+}
+
+.h-\[1px\] {
+  height: 1px;
+}
+
 .max-h-full {
   max-height: 100%;
 }
@@ -443,6 +456,10 @@ header nav > div {
 
 .max-w-screen-sm {
   max-width: 640px;
+}
+
+.max-w-screen-xl {
+  max-width: 1280px;
 }
 
 .flex-auto {
@@ -1135,6 +1152,10 @@ header nav > div {
 .text-gray-500 {
   --tw-text-opacity: 1;
   color: rgb(107 114 128 / var(--tw-text-opacity));
+}
+
+.text-t_dark\/50 {
+  color: rgb(49 55 67 / 0.5);
 }
 
 .bg-blend-multiply {

@@ -7,6 +7,7 @@
     <meta name="author" content="Jobwings33">
     <meta name="robots" content="index, follow">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- Link Swiper's CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <!-- Font Awesome CDN -->
@@ -66,7 +67,8 @@
 <body class="text-t_dark font-degular">
     <!-- Header section  -->
     <div id="overlay" class="fixed top-0 left-0 z-40 w-screen h-screen bg-black/40 backdrop-blur-sm"></div>
-    <header class="sticky top-0 z-50 flex flex-wrap items-center justify-between w-full max-w-screen-lg px-1 py-2 mx-auto bg-white/90 backdrop-blur-sm">
+    <header
+        class="sticky top-0 z-50 flex flex-wrap items-center justify-between w-full max-w-screen-lg px-1 py-2 mx-auto bg-white/90 backdrop-blur-sm">
         <a href="/home.html">
             <img class="h-[4em] w-auto" src="./assets/img/jobwing_logo.png"
                 alt="Jobwings33 - Career Development & Recruitment Solutions"
@@ -124,7 +126,7 @@
     <!-- End Hero section  -->
 
     <!-- About Section -->
-    <section
+    <section data-aos="fade-in" data-aos-delay="400"
         class="relative grid max-w-screen-lg gap-4 p-8 mx-auto text-base bg-white shadow-md shadow-gray-100/90 -mt-14 md:grid-cols-3">
         <div class="flex flex-col gap-2 md:col-span-1">
             <h4 class="max-w-[70ch] px-2 uppercase border-l-4 text-sm border-t_orange ">Who we are</h4>
@@ -154,29 +156,31 @@
     </section>
     <!-- End About Section -->
     <!-- Career Section  -->
-    <section class="px-4 py-12 mt-8 text-center bg-t_navy text-white/90">
+    <section
+    data-aos="fade-in" 
+    class="px-4 py-12 mt-8 text-center bg-t_navy text-white/90">
         <div class="max-w-screen-lg py-12 mx-auto">
             <h2 class="mb-2 text-3xl font-bold leading-tight text-white">Empowering Your Career</h2>
             <div class="flex flex-col mt-8">
                 <div class="grid gap-4" style="grid-template-columns: repeat(auto-fill,minmax(200px,1fr));">
-                    <div class="flex flex-col gap-1 p-4 py-8 text-center bg-white shadow-md">
+                    <div data-aos="fade-in" data-aos-delay="50"  class="flex flex-col gap-1 p-4 py-8 text-center bg-white shadow-md">
                         <i class="text-4xl text-t_blue fas fa-briefcase fa-2x"></i>
                         <h3 class="text-base font-semibold text-t_navy">Career Development</h3>
                         <p class="text-sm text-t_dark/70">Guidance and support to help you achieve your career goals</p>
                     </div>
-                    <div class="flex flex-col gap-1 p-4 py-8 text-center bg-white shadow-md">
+                    <div data-aos="fade-in" data-aos-delay="100"  class="flex flex-col gap-1 p-4 py-8 text-center bg-white shadow-md">
                         <i class="text-4xl text-t_blue fas fa-chalkboard-teacher fa-2x"></i>
                         <h3 class="text-base font-semibold text-t_navy">Professional Training</h3>
                         <p class="text-sm text-t_dark/70">Enhance your skills and knowledge with our training programs
                         </p>
                     </div>
-                    <div class="flex flex-col gap-1 p-4 py-8 text-center bg-white shadow-md">
+                    <div data-aos="fade-in" data-aos-delay="200"  class="flex flex-col gap-1 p-4 py-8 text-center bg-white shadow-md">
                         <i class="text-4xl text-t_blue fas fa-tools fa-2x"></i>
                         <h3 class="text-base font-semibold text-t_navy">Skill Acquisition</h3>
                         <p class="text-sm text-t_dark/70">Acquire the skills and experience needed to succeed in your
                             career</p>
                     </div>
-                    <div class="flex flex-col gap-1 p-4 py-8 text-center bg-white shadow-md">
+                    <div data-aos="fade-in" data-aos-delay="300"  class="flex flex-col gap-1 p-4 py-8 text-center bg-white shadow-md">
                         <i class="text-4xl text-t_blue fas fa-business-time fa-2x"></i>
                         <h3 class="text-base font-semibold text-t_navy">Career Guidance</h3>
                         <p class="text-sm text-t_dark/70">Expert advice and guidance to help you make informed career
@@ -189,8 +193,10 @@
     <!-- End Career Section -->
 
     <!-- Mission Section  -->
-    <section class="relative grid max-w-screen-lg p-8 mx-auto text-base bg-white gap-14 my-14 md:grid-cols-5">
-        <div class="flex flex-col gap-2 md:col-span-2">
+    <section
+    
+     class="relative grid max-w-screen-lg p-8 mx-auto text-base bg-white gap-14 my-14 md:grid-cols-5">
+        <div data-aos="zoom-in-down"  class="flex flex-col gap-2 md:col-span-2">
             <h1 class="max-w-[70ch] text-3xl font-bold tracking-tight leading-[1.2]">
                 Supporting Equal Access to Opportunities
             </h1>
@@ -200,7 +206,7 @@
                 supporting those with limited resources in achieving their career goals.
             </p>
         </div>
-        <div class="flex flex-col gap-2 text-sm md:col-span-3 text-t_dark/80">
+        <div data-aos="zoom-in-down" data-aos-delay="100" class="flex flex-col gap-2 text-sm md:col-span-3 text-t_dark/80">
             <div>
                 <h3 class="mb-1 text-xl font-semibold leading-tight text-t_navy">Your Support Matters</h3>
                 <p>
@@ -222,7 +228,7 @@
     <!-- End Mission Section  -->
 
     <!-- Values Section  -->
-    <section class="hidden px-4 py-12 bg-t_grey text-t_dark">
+    <section data-aos="fade-in"  class="px-4 py-12 bg-t_grey text-t_dark">
         <div class="max-w-screen-lg py-12 mx-auto text-center">
             <h2 class="text-3xl font-bold leading-tight mb-7 text-t_navy">Our Values</h2>
             <div class="grid gap-3" style="grid-template-columns: repeat(auto-fill,minmax(200px,1fr));">
@@ -273,11 +279,12 @@
     <!-- Team Section  -->
     <section class="flex flex-col gap-2 pt-12 text-center">
         <h2 class="text-4xl font-bold leading-tight text-t_navy">Meet the Team</h2>
-        <p class="max-w-[70ch] mx-auto text-center">Our team of passionate experts is dedicated to transforming your career development
+        <p class="max-w-[70ch] mx-auto text-center">Our team of passionate experts is dedicated to transforming your
+            career development
             and recruitment experience.</p>
         <div class="grid max-w-screen-lg gap-4 px-4 py-4 pb-12 mx-auto my-8"
             style="grid-template-columns: repeat(auto-fill,minmax(200px,1fr));">
-            <div class="flex flex-col p-6 bg-t_navy rounded-bl-3xl rounded-tr-3xl">
+            <div data-aos="zoom-in-down" data-aos-delay="50" class="flex flex-col p-6 bg-t_navy rounded-bl-3xl rounded-tr-3xl">
                 <h3 class="text-2xl font-semibold text-white">Team of Expert </h3>
                 <p class="text-sm text-white/80">We tailor our approach to your unique needs, leveraging
                     cutting-edge technology to streamline the job search process.</p>
@@ -288,7 +295,7 @@
                     <a href="#" class="fab fa-whatsapp"></a>
                 </div>
             </div>
-            <div class="relative flex flex-col overflow-hidden rounded-bl-3xl rounded-tr-3xl group">
+            <div data-aos="zoom-in-down" data-aos-delay="100" class="relative flex flex-col overflow-hidden rounded-bl-3xl rounded-tr-3xl group">
                 <img src="./assets/img/team/1.jpg" class="w-full h-[250px] object-cover" alt="">
                 <div class="flex flex-col gap-0 px-4 py-2 leading-tight bg-t_navy">
                     <h3 class="text-xl font-semibold text-white ">James Bond</h3>
@@ -311,7 +318,7 @@
                     </div>
                 </div>
             </div>
-            <div class="relative flex flex-col overflow-hidden rounded-bl-3xl rounded-tr-3xl group">
+            <div data-aos="zoom-in-down" data-aos-delay="200" class="relative flex flex-col overflow-hidden rounded-bl-3xl rounded-tr-3xl group">
                 <img src="./assets/img/team/1.jpg" class="w-full h-[250px] object-cover" alt="">
                 <div class="flex flex-col gap-0 px-4 py-2 leading-tight bg-t_navy">
                     <h3 class="text-xl font-semibold text-white ">James Bond</h3>
@@ -334,7 +341,7 @@
                     </div>
                 </div>
             </div>
-            <div class="relative flex flex-col overflow-hidden rounded-bl-3xl rounded-tr-3xl group">
+            <div data-aos="zoom-in-down" data-aos-delay="300" class="relative flex flex-col overflow-hidden rounded-bl-3xl rounded-tr-3xl group">
                 <img src="./assets/img/team/1.jpg" class="w-full h-[250px] object-cover" alt="">
                 <div class="flex flex-col gap-0 px-4 py-2 leading-tight bg-t_navy">
                     <h3 class="text-xl font-semibold text-white ">James Bond</h3>
@@ -439,7 +446,7 @@
                 <div class="overflow-hidden border rounded-lg">
                     <input type="checkbox" name="accordion" id="faq1" class="hidden peer">
                     <label for="faq1"
-                        class="flex items-center justify-between block w-full p-4 bg-white cursor-pointer">
+                        class="items-center justify-between block w-full p-4 bg-white cursor-pointer ">
                         <span class="font-medium">What is this about?</span>
                         <span class="transition-transform peer-checked:rotate-180">&#9660;</span>
                     </label>
@@ -542,5 +549,13 @@
     </footer>
     <!-- End Footer Section -->
 </body>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init({
+        startEvent: 'DOMContentLoaded',
+        easing: 'ease',
+    });
+</script>
 
 </html>

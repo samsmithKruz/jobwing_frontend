@@ -7,6 +7,7 @@
     <meta name="author" content="Jobwings33">
     <meta name="robots" content="index, follow">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- Link Swiper's CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <!-- Font Awesome CDN -->
@@ -193,6 +194,8 @@
         </form>
         <div class="relative flex flex-col gap-4 p-3">
             <div
+            data-aos="fade-left"
+            data-aos-delay="100"
                 class="sticky flex flex-col flex-wrap items-center justify-between w-full max-w-screen-lg gap-1 p-5 mx-auto text-center top-3 bg-t_green rounded-xl">
                 <h3 class="text-xl font-bold">
                     We can find a job for you
@@ -208,6 +211,8 @@
                 </a>
             </div>
             <div
+            data-aos="fade-left"
+            data-aos-delay="200"
                 class="sticky flex flex-col flex-wrap items-center justify-between w-full max-w-screen-lg gap-1 p-5 mx-auto text-center top-[2.5em] text-white/90 bg-t_red rounded-xl">
                 <h3 class="text-xl font-bold text-white">
                     Do you want to Hire?
@@ -222,6 +227,8 @@
                 </a>
             </div>
             <div
+            data-aos="fade-left"
+            data-aos-delay="300"
                 class="sticky top-[4.5em] z-20 flex flex-col flex-wrap items-center justify-between w-full max-w-screen-lg gap-1 p-5 mx-auto text-center text-white/90 bg-t_blue rounded-xl">
                 <h3 class="text-xl font-bold text-white">
                     Do you need a skill?
@@ -252,7 +259,7 @@
             and recruitment experience.</p>
         <div class="grid max-w-screen-lg gap-4 px-4 py-4 pb-12 mx-auto my-8"
             style="grid-template-columns: repeat(auto-fill,minmax(200px,1fr));">
-            <div class="flex flex-col p-6 bg-t_navy rounded-bl-3xl rounded-tr-3xl">
+            <div data-aos="zoom-in-down" data-aos-delay="50" class="flex flex-col p-6 bg-t_navy rounded-bl-3xl rounded-tr-3xl">
                 <h3 class="text-2xl font-semibold text-white">Team of Expert </h3>
                 <p class="text-sm text-white/80">We tailor our approach to your unique needs, leveraging
                     cutting-edge technology to streamline the job search process.</p>
@@ -263,7 +270,7 @@
                     <a href="#" class="fab fa-whatsapp"></a>
                 </div>
             </div>
-            <div class="relative flex flex-col overflow-hidden rounded-bl-3xl rounded-tr-3xl group">
+            <div data-aos="zoom-in-down" data-aos-delay="100" class="relative flex flex-col overflow-hidden rounded-bl-3xl rounded-tr-3xl group">
                 <img src="./assets/img/team/1.jpg" class="w-full h-[250px] object-cover" alt="">
                 <div class="flex flex-col gap-0 px-4 py-2 leading-tight bg-t_navy">
                     <h3 class="text-xl font-semibold text-white ">James Bond</h3>
@@ -286,7 +293,7 @@
                     </div>
                 </div>
             </div>
-            <div class="relative flex flex-col overflow-hidden rounded-bl-3xl rounded-tr-3xl group">
+            <div data-aos="zoom-in-down" data-aos-delay="200" class="relative flex flex-col overflow-hidden rounded-bl-3xl rounded-tr-3xl group">
                 <img src="./assets/img/team/1.jpg" class="w-full h-[250px] object-cover" alt="">
                 <div class="flex flex-col gap-0 px-4 py-2 leading-tight bg-t_navy">
                     <h3 class="text-xl font-semibold text-white ">James Bond</h3>
@@ -309,7 +316,7 @@
                     </div>
                 </div>
             </div>
-            <div class="relative flex flex-col overflow-hidden rounded-bl-3xl rounded-tr-3xl group">
+            <div data-aos="zoom-in-down" data-aos-delay="300" class="relative flex flex-col overflow-hidden rounded-bl-3xl rounded-tr-3xl group">
                 <img src="./assets/img/team/1.jpg" class="w-full h-[250px] object-cover" alt="">
                 <div class="flex flex-col gap-0 px-4 py-2 leading-tight bg-t_navy">
                     <h3 class="text-xl font-semibold text-white ">James Bond</h3>
@@ -409,5 +416,11 @@
     </footer>
     <!-- End Footer Section -->
 </body>
-
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init({
+        startEvent: 'DOMContentLoaded',
+        easing: 'ease',
+    });
+</script>
 </html>
