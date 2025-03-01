@@ -7,6 +7,7 @@
     <meta name="author" content="Jobwings33">
     <meta name="robots" content="index, follow">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- Link Swiper's CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
@@ -172,7 +173,7 @@
         </a>
 
     </aside>
-    <main class="flex flex-col flex-auto h-full gap-2">
+    <main class="flex flex-col flex-auto h-full gap-2 overflow-y-auto">
         <div class="flex items-center p-4 bg-white border-b-[1px] justify-between relative z-30">
             <div class="flex items-center gap-2">
                 <div class="flex ">
@@ -281,16 +282,102 @@
 
             </div>
         </div>
-        <section class="grid p-4 m-4" style="grid-template-columns: repeat(auto-fill,minmax(200px,1fr));">
-            <div class="flex gap-2 p-4 rounded-lg bg-t_green">
-                <span class="text-sm font-semibold">Total Number</span>
-                <p>
-                    5,554
-                </p>
-            </div>
-        </section>
+        <div class="flex flex-col flex-auto gap-4">
+            <section class="grid gap-4 p-4 m-4" style="grid-template-columns: repeat(auto-fill,minmax(200px,1fr));">
+                <div class="flex flex-col gap-2 p-4 rounded-lg shadow-sm bg-t_green/90 text-t_dark/80">
+                    <i class="mb-1 text-3xl fas text-t_navy fa-briefcase"></i>
+                    <p class="leading-[0.5em] text-4xl font-bold text-t_navy">
+                        5,554
+                    </p>
+                    <span class="text-sm font-semibold">Job Posted</span>
+                </div>
+                <div class="flex flex-col gap-2 p-4 rounded-lg shadow-sm bg-t_navy/90 text-white/80">
+                    <i class="mb-1 text-3xl text-white fas fa-file-lines"></i>
+                    <p class="leading-[0.5em] text-4xl font-bold text-white">
+                        832
+                    </p>
+                    <span class="text-sm font-semibold">Total Applications</span>
+                </div>
+                <div class="flex flex-col gap-2 p-4 rounded-lg shadow-sm bg-t_blue/90 text-white/80">
+                    <i class="mb-1 text-3xl text-white fas fa-calendar-check"></i>
+                    <p class="leading-[0.5em] text-4xl font-bold text-white">
+                        29
+                    </p>
+                    <span class="text-sm font-semibold">Consultation Bookings</span>
+                </div>
+                <div class="flex flex-col gap-2 p-4 rounded-lg shadow-sm bg-t_purple/90 text-white/80">
+                    <i class="mb-1 text-3xl text-white fas fa-building"></i>
+                    <p class="leading-[0.5em] text-4xl font-bold text-white">
+                        1,298
+                    </p>
+                    <span class="text-sm font-semibold">Recruiter Job Requests</span>
+                </div>
+            </section>
+            <section class="grid flex-auto grid-cols-1 gap-6 p-4 mx-4 md:grid-cols-1 lg:grid-cols-2">
+                <!-- Applications Over Time -->
+                <div class="col-span-2 p-4 bg-white rounded-lg shadow">
+                    <h2 class="mb-4 text-lg font-semibold">Applications Over Time</h2>
+                    <div id="applicationsChart"></div>
+                </div>
+                <!-- Recruiter Requests Over Time -->
+                <div class="p-4 bg-white rounded-lg shadow">
+                    <h2 class="mb-4 text-lg font-semibold">Recruiter Requests</h2>
+                    <div id="recruiterRequestsChart"></div>
+                </div>
+                <!-- Consultation Over Time -->
+                <div class="p-4 bg-white rounded-lg shadow">
+                    <h2 class="mb-4 text-lg font-semibold">Consultation Over Time</h2>
+                    <div id="consultationChart"></div>
+                </div>
+            </section>
+        </div>
     </main>
 
+    <script>
+        const data = {
+            applications: [10, 25, 15, 30, 40, 60, 80],
+            recruiterRequests: [5, 15, 10, 18, 25, 30, 50],
+            consultations: [50, 30, 20], // Example: 50 for Successful, 30 Pending, 20 Rejected
+            categories: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul"],
+        };
+
+
+        document.addEventListener("DOMContentLoaded", function () {
+            const data = {
+                applications: [10, 25, 15, 30, 40, 60, 80],
+                consultations: [5, 15, 10, 18, 25, 30, 50],
+                recruiterRequests: [50, 30, 20], // Example: 50 for Successful, 30 Pending, 20 Rejected
+                categories: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul"],
+            };
+
+            // Line Chart for Applications Over Time
+            new ApexCharts(document.querySelector("#applicationsChart"), {
+                chart: { type: "line", height: 250 },
+                series: [{ name: "Applications", data: data.applications }],
+                xaxis: { categories: data.categories },
+                colors: ["#38bdf8"],
+            }).render();
+            
+
+            // Bar Chart for Consultation Over Time
+            new ApexCharts(document.querySelector("#consultationChart"), {
+                chart: { type: "bar", height: 250 },
+                series: [{ name: "Consultations", data: data.consultations }],
+                xaxis: { categories: data.categories },
+                colors: ["#facc15"],
+            }).render();
+            
+            // Pie Chart for Recruiter Status
+            new ApexCharts(document.querySelector("#recruiterRequestsChart"), {
+                chart: { type: "pie", height: 250 },
+                series: data.recruiterRequests,
+                labels: ["Accepted", "Pending", "Rejected"],
+                colors: ["#10b981", "#fbbf24", "#ef4444"],
+                legend: { position: "bottom" }, // Moves legend below for better readability
+            }).render();
+            
+        });      
+    </script>
 </body>
 
 
