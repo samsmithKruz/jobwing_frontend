@@ -75,17 +75,61 @@
   #job_list {
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
   }
-  #job_list.rows{
+  #job_list.rows {
     grid-template-columns: 1fr;
-
+  }
+  .showPassword #showIcon {
+    display: block;
+  }
+  .showPassword #hideIcon {
+    display: none;
+  }
+  .showPassword.show #showIcon {
+    display: none;
+  }
+  .showPassword.show #hideIcon {
+    display: block;
   }
 }
 
 @layer utilities {
+  @media (max-width: theme("screens.md")) {
+    #dashboard:has(#showAside:checked) aside {
+      @apply left-0;
+    }
+    #dashboard:has(#showAside:checked) #overlay {
+      @apply block;
+    }
+    #dashboard:has(#showAside:checked) #closeNav {
+      @apply block;
+    }
+  }
   .line-clamp-2 {
     @apply overflow-hidden text-ellipsis;
     display: -webkit-box;
     -webkit-line-clamp: 2; /* Adjust for the number of lines you want */
     -webkit-box-orient: vertical;
+  }
+  /* Scrollbar width */
+  .scrollbar-thin::-webkit-scrollbar {
+    width: 8px; /* Mac-like slim scrollbar */
+    height: 8px;
+  }
+
+  /* Track (background) */
+  .scrollbar-thin::-webkit-scrollbar-track {
+    @apply bg-black/20 /* Light gray like macOS */
+    /* border-radius: 10px; */;
+  }
+
+  /* Scrollbar thumb (the draggable part) */
+  .scrollbar-thin::-webkit-scrollbar-thumb {
+    background: #b3b3b3; /* Subtle gray */
+    border-radius: 10px;
+  }
+
+  /* Hover effect */
+  .scrollbar-thin:hover::-webkit-scrollbar-thumb {
+    background: #888; /* Darker gray when hovered */
   }
 }
