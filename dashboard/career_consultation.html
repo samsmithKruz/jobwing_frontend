@@ -87,7 +87,7 @@
                 General
             </div>
             <a href="index.html"
-                class="flex items-center gap-2 px-4 py-2 duration-150 ease-out rounded-md bg-t_green/30 hover:bg-t_green/30">
+                class="flex items-center gap-2 px-4 py-2 duration-150 ease-out rounded-md hover:bg-t_green/30">
                 <i class="fa-solid fa-gauge"></i>
                 Dashboard
             </a>
@@ -103,15 +103,17 @@
                 </label>
 
                 <!-- Hidden Checkbox for Toggle -->
-                <input type="checkbox" id="job_listing" class="hidden peer">
+                <input type="checkbox" id="job_listing" class="hidden peer" >
 
                 <!-- Dropdown Menu -->
                 <div class="relative left-0 hidden w-full mt-2 overflow-hidden font-normal peer-checked:block">
-                    <a href="add_job.html" class="flex items-center gap-2 px-4 py-2 pl-8 rounded-md hover:bg-t_green/20">
+                    <a href="add_job.html"
+                        class="flex items-center gap-2 px-4 py-2 pl-8 rounded-md hover:bg-t_green/20">
                         <i class="fa-solid fa-plus"></i>
                         Add New Job
                     </a>
-                    <a href="edit_delete_job.html" class="flex items-center gap-2 px-4 py-2 pl-8 rounded-md hover:bg-t_green/20">
+                    <a href="edit_delete_job.html"
+                        class="flex items-center gap-2 px-4 py-2 pl-8 rounded-md b hover:bg-t_green/20">
                         <i class="fa-solid fa-pen-to-square"></i>
                         Edit/Delete Job
                     </a>
@@ -122,16 +124,19 @@
                     </a>
                 </div>
             </div>
-            <a href="job_assitance.html" class="flex items-center gap-2 px-4 py-2 duration-150 ease-out rounded-md hover:bg-t_green/20">
+            <a href="job_assitance.html"
+                class="flex items-center gap-2 px-4 py-2 duration-150 ease-out rounded-md hover:bg-t_green/20">
                 <i class="fa-solid fa-headset"></i>
                 Job Assistance Request
             </a>
-            <a href="recruiter_request.html" class="flex items-center gap-2 px-4 py-2 duration-150 ease-out rounded-md hover:bg-t_green/30">
+            <a href="recruiter_request.html"
+                class="flex items-center gap-2 px-4 py-2 duration-150 ease-out rounded-md hover:bg-t_green/30">
                 <i class="fa-solid fa-user-tie"></i>
                 Recruiter Request
             </a>
 
-            <a href="career_consultation.html" class="flex items-center gap-2 px-4 py-2 duration-150 ease-out rounded-md hover:bg-t_green/30">
+            <a href="career_consultation.html"
+                class="flex items-center gap-2 px-4 py-2 duration-150 ease-out rounded-md bg-t_green/30 hover:bg-t_green/30">
                 <i class="fa-solid fa-calendar-check"></i>
                 Career Consultaions
             </a>
@@ -196,7 +201,7 @@
                         }
                     </script>
                 </div>
-                <h2 class="text-xl font-semibold">Dashboard</h2>
+                <h2 class="text-xl font-semibold">Consultation Management<h2>
             </div>
             <div class="flex items-center gap-2">
                 <div class="relative">
@@ -282,102 +287,194 @@
 
             </div>
         </div>
-        <div class="flex flex-col flex-auto gap-4">
-            <section class="grid gap-4 p-4 m-4" style="grid-template-columns: repeat(auto-fill,minmax(200px,1fr));">
-                <div class="flex flex-col gap-2 p-4 rounded-lg shadow-sm bg-t_green/90 text-t_dark/80">
-                    <i class="mb-1 text-3xl fas text-t_navy fa-briefcase"></i>
-                    <p class="leading-[0.5em] text-4xl font-bold text-t_navy">
-                        5,554
+        <section class="items-start w-full px-4 py-10 mx-auto md:max-w-screen-lg ">
+            <div
+                class="relative flex flex-col w-full h-full text-gray-700 bg-white shadow-md rounded-xl bg-clip-border">
+                <div class="relative mx-4 mt-4 text-gray-700 bg-clip-border">
+                    <div class="flex items-center justify-between gap-8 mb-8">
+                        <div>
+                            <h5
+                                class="block mt-4 font-sans text-xl antialiased font-semibold leading-snug tracking-normal text-blue-gray-900">
+                                Consultation Management
+                            </h5>
+                            <p
+                                class="block mt-1 font-sans text-sm antialiased font-normal leading-relaxed text-gray-700">
+                                See information about all consultation.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="flex flex-col items-center justify-between gap-4 md:flex-row">
+                        <div class="w-full md:w-72">
+                            <div class="relative h-10 w-full min-w-[200px]">
+                                <div
+                                    class="absolute grid w-5 h-5 top-2/4 right-3 -translate-y-2/4 place-items-center text-blue-gray-500">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                        stroke-width="1.5" stroke="currentColor" aria-hidden="true" class="w-5 h-5">
+                                        <path stroke-linecap="round" stroke-linejoin="round"
+                                            d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z">
+                                        </path>
+                                    </svg>
+                                </div>
+                                <input
+                                    class="peer w-full rounded-[7px] border border-blue-gray-200  bg-transparent px-3 py-2.5 font-sans text-sm font-normal text-blue-gray-700 outline outline-0 transition-all placeholder-shown:border placeholder-shown:border-blue-gray-200 placeholder-shown:border-t-blue-gray-200 focus:border-2 focus:border-gray-900 focus:border-t-transparent focus:outline-0 "
+                                    placeholder=" " />
+                                <label
+                                    class="before:content[' '] after:content[' '] pointer-events-none absolute left-0 -top-1.5 flex h-full w-full select-none truncate text-[11px] font-normal leading-tight text-gray-500 transition-all before:pointer-events-none before:mt-[6.5px] before:mr-1 before:box-border before:block before:h-1.5 before:w-2.5 before:rounded-tl-md before:border-t before:border-l before:border-blue-gray-200 before:transition-all after:pointer-events-none after:mt-[6.5px] after:ml-1 after:box-border after:block after:h-1.5 after:w-2.5 after:flex-grow after:rounded-tr-md after:border-t after:border-r after:border-blue-gray-200 after:transition-all peer-placeholder-shown:text-sm peer-placeholder-shown:leading-[3.75] peer-placeholder-shown:text-blue-gray-500 peer-placeholder-shown:before:border-transparent peer-placeholder-shown:after:border-transparent peer-focus:text-[11px] peer-focus:leading-tight peer-focus:text-gray-900 peer-focus:before:border-t-2 peer-focus:before:border-l-2 peer-focus:before:!border-gray-900 peer-focus:after:border-t-2 peer-focus:after:border-r-2 peer-focus:after:!border-gray-900 peer-disabled:text-transparent peer-disabled:before:border-transparent peer-disabled:after:border-transparent peer-disabled:peer-placeholder-shown:text-blue-gray-500">
+                                    Search
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="p-6 px-0 overflow-scroll">
+                    <table class="w-full mt-4 text-left table-auto min-w-max">
+                        <thead>
+                            <tr>
+                                <th class="p-4 border-y border-blue-gray-100 bg-blue-gray-50/50">
+                                    <p
+                                        class="block font-sans text-sm antialiased font-normal leading-none text-blue-gray-900 opacity-70">
+                                        Full Name
+                                    </p>
+                                </th>
+                                <th class="p-4 border-y border-blue-gray-100 bg-blue-gray-50/50">
+                                    <p
+                                        class="block font-sans text-sm antialiased font-normal leading-none text-blue-gray-900 opacity-70">
+                                        Consultation Type
+                                    </p>
+                                </th>
+                                <th class="p-4 border-y border-blue-gray-100 bg-blue-gray-50/50">
+                                    <p
+                                        class="block font-sans text-sm antialiased font-normal leading-none text-blue-gray-900 opacity-70">
+                                        Status
+                                    </p>
+                                </th>
+                                <th class="p-4 border-y border-blue-gray-100 bg-blue-gray-50/50">
+                                    <p
+                                        class="block font-sans text-sm antialiased font-normal leading-none text-blue-gray-900 opacity-70">
+                                        Date
+                                    </p>
+                                </th>
+                                <th class="p-4 border-y border-blue-gray-100 bg-blue-gray-50/50">
+                                    <p
+                                        class="block font-sans text-sm antialiased font-normal leading-none text-blue-gray-900 opacity-70">
+                                    </p>
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="even:bg-slate-50">
+                                <td class="p-4 border-b border-blue-gray-50">
+                                    <div class="flex items-center gap-3">
+                                            <p
+                                                class="block text-base antialiased font-semibold leading-normal text-blue-gray-900">
+                                                Favour Monday Jackson
+                                            </p>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="p-4 border-b border-blue-gray-50">
+                                    <div class="flex flex-col">
+                                        <p
+                                            class="block font-sans text-sm antialiased font-normal leading-normal text-blue-gray-900 opacity-70">
+                                            Marketing
+                                        </p>
+                                    </div>
+                                </td>
+                                <td class="p-4 border-b border-blue-gray-50">
+                                    <div class="w-max">
+                                        <div
+                                            class="relative grid items-center px-2 py-1 font-sans text-xs font-bold text-green-900 uppercase rounded-md select-none whitespace-nowrap bg-green-500/20">
+                                            <span class="">Resolved</span>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="p-4 border-b border-blue-gray-50">
+                                    <p
+                                        class="block font-sans text-sm antialiased font-normal leading-normal text-blue-gray-900 opacity-70">
+                                        23/04/18
+                                    </p>
+                                </td>
+                                <td class="p-4 border-b border-blue-gray-50">
+                                    <div class="flex gap-1">
+                                        <a href="#" title="Publish" class="px-2 py-1 rounded-lg hover:bg-gray-900/10">
+                                            <i class="fa-solid fa-eye"></i>
+                                        </a>
+                                        <a href="#" title="Delete" class="px-2 py-1 rounded-lg hover:bg-gray-900/10">
+                                            <i class="fa-solid fa-trash"></i>
+                                        </a>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="even:bg-slate-50">
+                                <td class="p-4 border-b border-blue-gray-50">
+                                    <div class="flex items-center gap-3">
+                                        <div class="flex flex-col">
+                                            <p
+                                                class="block text-base antialiased font-semibold leading-normal text-blue-gray-900">
+                                                Favour Monday Jackson
+                                            </p>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="p-4 border-b border-blue-gray-50">
+                                    <div class="flex flex-col">
+                                        <p
+                                            class="block font-sans text-sm antialiased font-normal leading-normal text-blue-gray-900 opacity-70">
+                                            Computing Industry
+                                        </p>
+                                    </div>
+                                </td>
+                                <td class="p-4 border-b border-blue-gray-50">
+                                    <div class="w-max">
+                                        <div
+                                            class="relative grid items-center px-2 py-1 font-sans text-xs font-bold text-orange-900 uppercase rounded-md select-none whitespace-nowrap bg-orange-500/20">
+                                            <span class="">Pending</span>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="p-4 border-b border-blue-gray-50">
+                                    <p
+                                        class="block font-sans text-sm antialiased font-normal leading-normal text-blue-gray-900">
+                                        23/04/18
+                                    </p>
+                                </td>
+                                <td class="p-4 border-b border-blue-gray-50">
+                                    <div class="flex gap-1">
+                                        <a href="#" title="Publish" class="px-2 py-1 rounded-lg hover:bg-gray-900/10">
+                                            <i class="fa-solid fa-eye"></i>
+                                        </a>
+                                        </a>
+                                        <a href="#" title="Delete" class="px-2 py-1 rounded-lg hover:bg-gray-900/10">
+                                            <i class="fa-solid fa-trash"></i>
+                                        </a>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="flex items-center justify-between p-4 border-t border-blue-gray-50">
+                    <p class="block font-sans text-sm antialiased font-normal leading-normal text-blue-gray-900">
+                        Page 1 of 10
                     </p>
-                    <span class="text-sm font-semibold">Job Posted</span>
+                    <div class="flex gap-2">
+                        <button
+                            class="select-none rounded-lg border border-gray-900 py-2 px-4 text-center align-middle font-sans text-xs font-bold uppercase text-gray-900 transition-all hover:opacity-75 focus:ring focus:ring-gray-300 active:opacity-[0.85] disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
+                            type="button">
+                            Previous
+                        </button>
+                        <button
+                            class="select-none rounded-lg border border-gray-900 py-2 px-4 text-center align-middle font-sans text-xs font-bold uppercase text-gray-900 transition-all hover:opacity-75 focus:ring focus:ring-gray-300 active:opacity-[0.85] disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
+                            type="button">
+                            Next
+                        </button>
+                    </div>
                 </div>
-                <div class="flex flex-col gap-2 p-4 rounded-lg shadow-sm bg-t_navy/90 text-white/80">
-                    <i class="mb-1 text-3xl text-white fas fa-file-lines"></i>
-                    <p class="leading-[0.5em] text-4xl font-bold text-white">
-                        832
-                    </p>
-                    <span class="text-sm font-semibold">Total Applications</span>
-                </div>
-                <div class="flex flex-col gap-2 p-4 rounded-lg shadow-sm bg-t_blue/90 text-white/80">
-                    <i class="mb-1 text-3xl text-white fas fa-calendar-check"></i>
-                    <p class="leading-[0.5em] text-4xl font-bold text-white">
-                        29
-                    </p>
-                    <span class="text-sm font-semibold">Consultation Bookings</span>
-                </div>
-                <div class="flex flex-col gap-2 p-4 rounded-lg shadow-sm bg-t_purple/90 text-white/80">
-                    <i class="mb-1 text-3xl text-white fas fa-building"></i>
-                    <p class="leading-[0.5em] text-4xl font-bold text-white">
-                        1,298
-                    </p>
-                    <span class="text-sm font-semibold">Recruiter Job Requests</span>
-                </div>
-            </section>
-            <section class="grid flex-auto grid-cols-1 gap-6 p-4 mx-4 md:grid-cols-1 lg:grid-cols-2">
-                <!-- Applications Over Time -->
-                <div class="p-4 bg-white rounded-lg shadow lg:col-span-2">
-                    <h2 class="mb-4 text-lg font-semibold">Applications Over Time</h2>
-                    <div id="applicationsChart"></div>
-                </div>
-                <!-- Recruiter Requests Over Time -->
-                <div class="p-4 bg-white rounded-lg shadow">
-                    <h2 class="mb-4 text-lg font-semibold">Recruiter Requests</h2>
-                    <div id="recruiterRequestsChart"></div>
-                </div>
-                <!-- Consultation Over Time -->
-                <div class="p-4 bg-white rounded-lg shadow">
-                    <h2 class="mb-4 text-lg font-semibold">Consultation Over Time</h2>
-                    <div id="consultationChart"></div>
-                </div>
-            </section>
-        </div>
+            </div>
+        </section>
+
     </main>
 
-    <script>
-        const data = {
-            applications: [10, 25, 15, 30, 40, 60, 80],
-            recruiterRequests: [5, 15, 10, 18, 25, 30, 50],
-            consultations: [50, 30, 20], // Example: 50 for Successful, 30 Pending, 20 Rejected
-            categories: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul"],
-        };
-
-
-        document.addEventListener("DOMContentLoaded", function () {
-            const data = {
-                applications: [10, 25, 15, 30, 40, 60, 80],
-                consultations: [5, 15, 10, 18, 25, 30, 50],
-                recruiterRequests: [50, 30, 20], // Example: 50 for Successful, 30 Pending, 20 Rejected
-                categories: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul"],
-            };
-
-            // Line Chart for Applications Over Time
-            new ApexCharts(document.querySelector("#applicationsChart"), {
-                chart: { type: "line", height: 250 },
-                series: [{ name: "Applications", data: data.applications }],
-                xaxis: { categories: data.categories },
-                colors: ["#38bdf8"],
-            }).render();
-            
-
-            // Bar Chart for Consultation Over Time
-            new ApexCharts(document.querySelector("#consultationChart"), {
-                chart: { type: "bar", height: 250 },
-                series: [{ name: "Consultations", data: data.consultations }],
-                xaxis: { categories: data.categories },
-                colors: ["#facc15"],
-            }).render();
-            
-            // Pie Chart for Recruiter Status
-            new ApexCharts(document.querySelector("#recruiterRequestsChart"), {
-                chart: { type: "pie", height: 250 },
-                series: data.recruiterRequests,
-                labels: ["Accepted", "Pending", "Rejected"],
-                colors: ["#10b981", "#fbbf24", "#ef4444"],
-                legend: { position: "bottom" }, // Moves legend below for better readability
-            }).render();
-            
-        });      
-    </script>
 </body>
 
 

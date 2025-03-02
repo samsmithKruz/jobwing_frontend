@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Jobwings33">
+    <meta name="robots" content="index, follow">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <link rel="stylesheet" href="../assets/fonts/font.css">
+    <link rel="stylesheet" href="../assets/css/styles.css">
+    <link rel="icon" type="image/png" href="../assets/img/fav.png">
+
+
+    <title>Jobwings33 | Career Development & Recruitment Solutions</title>
+    <meta name="description"
+        content="Empowering career growth and business success through expert recruitment, career development, and skill acquisition. Find jobs, post jobs, and get professional training.">
+    <meta name="keywords"
+        content="career development, job recruitment, hiring solutions, skills training, job search, career coaching, professional development, mentorship">
+
+
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Jobwings33 | Career Development & Recruitment Solutions">
+    <meta property="og:description"
+        content="Find the best jobs, hire top talent, and advance your career with Jobwings33. Get professional training, career coaching, and recruitment services.">
+    <meta property="og:image" content="https://www.jobwings33.com/assets/jobwings-preview.jpg">
+    <meta property="og:url" content="https://www.jobwings33.com">
+    <meta property="og:site_name" content="Jobwings33">
+
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Jobwings33 | Career Development & Recruitment Solutions">
+    <meta name="twitter:description"
+        content="Explore job opportunities, recruitment services, career coaching, and skill development at Jobwings33.">
+    <meta name="twitter:image" content="https://www.jobwings33.com/assets/jobwings-preview.jpg">
+    <meta name="twitter:site" content="@Jobwings33">
+
+    <link rel="canonical" href="https://www.jobwings33.com">
+    <script type="application/ld+json">
+            {
+              "@context": "https://schema.org",
+              "@type": "Organization",
+              "name": "Jobwings33",
+              "url": "https://www.jobwings33.com",
+              "logo": "https://www.jobwings33.com/assets/jobwings-logo.png",
+              "description": "Empowering career growth and business success through expert recruitment, career development, and skill acquisition.",
+              "contactPoint": {
+                "@type": "ContactPoint",
+                "telephone": "+234XXXXXXXXXX",
+                "contactType": "customer service"
+              },
+              "sameAs": [
+                "https://www.facebook.com/jobwings33",
+                "https://www.linkedin.com/company/jobwings33"
+              ]
+            }
+            </script>
+
+</head>
+
+<body id="dashboard" class="relative flex w-full h-screen overflow-x-hidden text-t_dark font-degular bg-slate-50">
+    <div id="overlay"
+        class="fixed top-0 left-0 z-40 w-screen h-screen transition-all duration-150 ease-in bg-black/40 backdrop-blur-sm">
+    </div>
+    <aside class="transition-all ease-in duration-150 left-[-100%] md:left-0 absolute md:relative
+        top-0  z-40 w-full max-w-[17em] flex flex-col h-full px-4 py-5 overflow-y-auto 
+        scrollbar-thin scrollbar-track-gray-200 scrollbar-thumb-gray-400 hover:scrollbar-thumb-gray-500 
+        bg-t_dark text-white/80" style="flex: 0 1 17em;">
+        <button id="closeNav" class="absolute top-0 right-0 block mx-5 my-7 md:hidden">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor" aria-hidden="true" data-slot="icon" class="w-6 h-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12"></path>
+            </svg>
+        </button>
+        <a href="#" class="block mb-4">
+            <img src="../assets/img/jobwing_logo.png" class="w-[120px] h-auto" alt="">
+        </a>
+        <nav class="flex flex-col gap-1.5 text-sm mt-12 font-medium flex-auto">
+            <div class="mt-2 text-base font-normal opacity-50">
+                General
+            </div>
+            <a href="index.html"
+                class="flex items-center gap-2 px-4 py-2 duration-150 ease-out rounded-md hover:bg-t_green/30">
+                <i class="fa-solid fa-gauge"></i>
+                Dashboard
+            </a>
+            <div class="relative">
+                <!-- Main Dropdown Toggle -->
+                <label for="job_listing"
+                    class="flex items-center justify-between w-full px-4 py-2 rounded-md cursor-pointer hover:bg-t_green/30">
+                    <div class="flex items-center gap-2">
+                        <i class="fa-solid fa-briefcase"></i>
+                        Jobs
+                    </div>
+                    <i class="transition-transform duration-200 fa-solid fa-chevron-down peer-checked:rotate-180"></i>
+                </label>
+
+                <!-- Hidden Checkbox for Toggle -->
+                <input type="checkbox" id="job_listing" class="hidden peer" checked>
+
+                <!-- Dropdown Menu -->
+                <div class="relative left-0 hidden w-full mt-2 overflow-hidden font-normal peer-checked:block">
+                    <a href="add_job.html"
+                        class="flex items-center gap-2 px-4 py-2 pl-8 rounded-md hover:bg-t_green/20">
+                        <i class="fa-solid fa-plus"></i>
+                        Add New Job
+                    </a>
+                    <a href="edit_delete_job.html"
+                        class="flex items-center gap-2 px-4 py-2 pl-8 rounded-md b hover:bg-t_green/20">
+                        <i class="fa-solid fa-pen-to-square"></i>
+                        Edit/Delete Job
+                    </a>
+                    <a href="view_application.html"
+                        class="flex items-center gap-2 px-4 py-2 pl-8 duration-150 ease-out rounded-md hover:bg-t_green/20">
+                        <i class="fa-solid fa-file-lines"></i>
+                        View Applications
+                    </a>
+                </div>
+            </div>
+            <a href="job_assitance.html"
+                class="flex items-center gap-2 px-4 py-2 duration-150 ease-out rounded-md hover:bg-t_green/20">
+                <i class="fa-solid fa-headset"></i>
+                Job Assistance Request
+            </a>
+            <a href="recruiter_request.html"
+                class="flex items-center gap-2 px-4 py-2 duration-150 ease-out rounded-md hover:bg-t_green/30">
+                <i class="fa-solid fa-user-tie"></i>
+                Recruiter Request
+            </a>
+
+            <a href="career_consultation.html"
+                class="flex items-center gap-2 px-4 py-2 duration-150 ease-out rounded-md hover:bg-t_green/30">
+                <i class="fa-solid fa-calendar-check"></i>
+                Career Consultaions
+            </a>
+            <div class="relative">
+                <div class="mt-2 text-base font-normal opacity-50">
+                    User Management
+                </div>
+                <a href="add_admin.html"
+                    class="flex items-center gap-2 px-4 py-2 duration-150 ease-out rounded-md hover:bg-t_green/30">
+                    <i class="fa-solid fa-plus"></i>
+                    Add Admin
+                </a>
+                <a href="edit_delete_admin.html"
+                    class="flex items-center gap-2 px-4 py-2 duration-150 ease-out rounded-md bg-t_green/30 hover:bg-t_green/30">
+                    <i class="fa-solid fa-pen-to-square"></i>
+                    Edit/Delete Admin
+                </a>
+            </div>
+            <div class="relative">
+                <div class="mt-2 text-base font-normal opacity-50">
+                    Account Settings
+                </div>
+                <a href="profile.html"
+                    class="flex items-center gap-2 px-4 py-2 duration-150 ease-out rounded-md hover:bg-t_green/30">
+                    <i class="fa-solid fa-user-shield"></i>
+                    Update Profile
+                </a>
+                <a href="password.html"
+                    class="flex items-center gap-2 px-4 py-2 duration-150 ease-out rounded-md hover:bg-t_green/30">
+                    <i class="fa-solid fa-key"></i>
+                    Change Password
+                </a>
+            </div>
+        </nav>
+        <a href="#"
+            class="flex items-center gap-2 px-4 py-2 mt-auto text-sm font-medium duration-150 ease-out rounded-md hover:bg-t_green/30">
+            <i class="fa-solid fa-right-from-bracket"></i>
+            Logout
+        </a>
+
+    </aside>
+    <main class="flex flex-col flex-auto h-full gap-2 overflow-y-auto">
+        <div class="flex items-center p-4 bg-white border-b-[1px] justify-between relative z-30">
+            <div class="flex items-center gap-2">
+                <div class="flex ">
+                    <input type="checkbox" name="" class="hidden" id="showAside">
+                    <label for="showAside" class="cursor-pointer">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" aria-hidden="true" data-slot="icon" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"></path>
+                        </svg>
+                    </label>
+                    <script>
+                        document.querySelector("#overlay").onclick = () => {
+                            // Toggle the checkbox 
+                            document.querySelector("label[for='showAside']").click();
+                        }
+                        document.querySelector("#closeNav").onclick = () => {
+                            // Toggle the checkbox 
+                            document.querySelector("label[for='showAside']").click();
+                        }
+                    </script>
+                </div>
+                <h2 class="text-xl font-semibold">Admin Management<h2>
+            </div>
+            <div class="flex items-center gap-2">
+                <div class="relative">
+                    <!-- Hidden Checkbox for Toggling -->
+                    <input type="checkbox" id="notificationToggle" class="hidden peer">
+
+                    <!-- Notification Bell with Badge -->
+                    <label for="notificationToggle"
+                        class="relative p-2 bg-gray-100 rounded-full cursor-pointer hover:bg-gray-200">
+                        <i class="text-xl fa-solid fa-bell"></i>
+                        <span
+                            class="absolute flex items-center justify-center w-5 h-5 text-xs text-white bg-red-500 rounded-full -top-1 -right-1">
+                            5
+                        </span>
+                    </label>
+
+                    <!-- Notification Dropdown -->
+                    <div
+                        class="absolute right-0 invisible mt-2 overflow-hidden text-sm transition-all duration-200 scale-95 bg-white border border-gray-200 rounded-lg shadow-lg opacity-0 w-72 peer-checked:opacity-100 peer-checked:scale-100 peer-checked:visible">
+                        <div class="px-4 py-3 font-semibold bg-gray-100 border-b">Notifications</div>
+                        <div class="overflow-y-auto max-h-64">
+                            <a href="#" class="flex items-start gap-2 px-4 py-2 border-b hover:bg-gray-50">
+                                <i class="mt-1 text-xs text-green-500 fa-solid fa-circle"></i>
+                                <span>New job posted: Frontend Developer</span>
+                            </a>
+                            <a href="#" class="flex items-start gap-2 px-4 py-2 border-b opacity-50 hover:bg-gray-50">
+                                <i class="mt-1 text-xs text-slate-400 fa-solid fa-circle"></i>
+                                <span>Your application for Backend Developer was received</span>
+                            </a>
+                            <a href="#" class="flex items-start gap-2 px-4 py-2 border-b opacity-50 hover:bg-gray-50">
+                                <i class="mt-1 text-xs text-slate-400 fa-solid fa-circle"></i>
+                                <span>Your application for Backend Developer was received</span>
+                            </a>
+                            <a href="#" class="flex items-start gap-2 px-4 py-2 border-b opacity-50 hover:bg-gray-50">
+                                <i class="mt-1 text-xs text-slate-400 fa-solid fa-circle"></i>
+                                <span>Your application for Backend Developer was received</span>
+                            </a>
+                            <a href="#" class="flex items-start gap-2 px-4 py-2 border-b opacity-50 hover:bg-gray-50">
+                                <i class="mt-1 text-xs text-slate-400 fa-solid fa-circle"></i>
+                                <span>Your application for Backend Developer was received</span>
+                            </a>
+                        </div>
+                        <a href="#" class="block py-2 text-center text-blue-600 hover:bg-gray-100">Read More</a>
+                    </div>
+                </div>
+                <div class="relative">
+                    <!-- Hidden Checkbox for Toggling -->
+                    <input type="checkbox" id="profileToggle" class="hidden peer">
+
+                    <!-- Profile Button -->
+                    <label for="profileToggle"
+                        class="flex items-center gap-2 p-2 bg-gray-100 rounded-lg cursor-pointer hover:bg-gray-200">
+                        <!-- Avatar (First Letter of Name) -->
+                        <div
+                            class="flex items-center justify-center w-8 h-8 font-bold text-white bg-blue-500 rounded-full">
+                            S
+                        </div>
+                        <!-- Name -->
+                        <span class="font-medium text-gray-800">Samuel Benny</span>
+                        <!-- Dropdown Icon -->
+                        <i class="text-sm text-gray-500 fa-solid fa-chevron-down"></i>
+                    </label>
+
+                    <!-- Profile Dropdown -->
+                    <div
+                        class="absolute right-0 invisible w-56 mt-2 overflow-hidden transition-all duration-200 scale-95 bg-white border border-gray-200 rounded-lg shadow-lg opacity-0 peer-checked:opacity-100 peer-checked:scale-100 peer-checked:visible">
+                        <div class="overflow-y-auto max-h-64">
+                            <a href="#" class="flex items-center gap-2 px-4 py-3 border-b hover:bg-gray-50">
+                                <i class="fa-solid fa-user"></i>
+                                <span>Profile Settings</span>
+                            </a>
+                            <a href="#" class="flex items-center gap-2 px-4 py-3 border-b hover:bg-gray-50">
+                                <i class="fa-solid fa-key"></i>
+                                <span>Change Password</span>
+                            </a>
+                            <a href="#" class="flex items-center gap-2 px-4 py-3 text-red-600 hover:bg-gray-50">
+                                <i class="fa-solid fa-right-from-bracket"></i>
+                                <span>Logout</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <section class="items-start w-full px-4 py-10 mx-auto md:max-w-screen-lg ">
+            <div
+                class="relative flex flex-col w-full h-full text-gray-700 bg-white shadow-md rounded-xl bg-clip-border">
+                <div class="relative mx-4 mt-4 text-gray-700 bg-clip-border">
+                    <div class="flex items-center justify-between gap-8 mb-8">
+                        <div>
+                            <h5
+                                class="block mt-4 font-sans text-xl antialiased font-semibold leading-snug tracking-normal text-blue-gray-900">
+                                Admin Management
+                            </h5>
+                            <p
+                                class="block mt-1 font-sans text-sm antialiased font-normal leading-relaxed text-gray-700">
+                                See information about all Admin
+                            </p>
+                        </div>
+                    </div>
+                    <div class="flex flex-col items-center justify-between gap-4 md:flex-row">
+                        <div class="w-full md:w-72">
+                            <div class="relative h-10 w-full min-w-[200px]">
+                                <div
+                                    class="absolute grid w-5 h-5 top-2/4 right-3 -translate-y-2/4 place-items-center text-blue-gray-500">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                        stroke-width="1.5" stroke="currentColor" aria-hidden="true" class="w-5 h-5">
+                                        <path stroke-linecap="round" stroke-linejoin="round"
+                                            d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z">
+                                        </path>
+                                    </svg>
+                                </div>
+                                <input
+                                    class="peer w-full rounded-[7px] border border-blue-gray-200  bg-transparent px-3 py-2.5 font-sans text-sm font-normal text-blue-gray-700 outline outline-0 transition-all placeholder-shown:border placeholder-shown:border-blue-gray-200 placeholder-shown:border-t-blue-gray-200 focus:border-2 focus:border-gray-900 focus:border-t-transparent focus:outline-0 "
+                                    placeholder=" " />
+                                <label
+                                    class="before:content[' '] after:content[' '] pointer-events-none absolute left-0 -top-1.5 flex h-full w-full select-none truncate text-[11px] font-normal leading-tight text-gray-500 transition-all before:pointer-events-none before:mt-[6.5px] before:mr-1 before:box-border before:block before:h-1.5 before:w-2.5 before:rounded-tl-md before:border-t before:border-l before:border-blue-gray-200 before:transition-all after:pointer-events-none after:mt-[6.5px] after:ml-1 after:box-border after:block after:h-1.5 after:w-2.5 after:flex-grow after:rounded-tr-md after:border-t after:border-r after:border-blue-gray-200 after:transition-all peer-placeholder-shown:text-sm peer-placeholder-shown:leading-[3.75] peer-placeholder-shown:text-blue-gray-500 peer-placeholder-shown:before:border-transparent peer-placeholder-shown:after:border-transparent peer-focus:text-[11px] peer-focus:leading-tight peer-focus:text-gray-900 peer-focus:before:border-t-2 peer-focus:before:border-l-2 peer-focus:before:!border-gray-900 peer-focus:after:border-t-2 peer-focus:after:border-r-2 peer-focus:after:!border-gray-900 peer-disabled:text-transparent peer-disabled:before:border-transparent peer-disabled:after:border-transparent peer-disabled:peer-placeholder-shown:text-blue-gray-500">
+                                    Search
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="p-6 px-0 overflow-scroll">
+                    <table class="w-full mt-4 text-left table-auto min-w-max">
+                        <thead>
+                            <tr>
+                                <th class="p-4 border-y border-blue-gray-100 bg-blue-gray-50/50">
+                                    <p
+                                        class="block font-sans text-sm antialiased font-normal leading-none text-blue-gray-900 opacity-70">
+                                        Full Name
+                                    </p>
+                                </th>
+                                <th class="p-4 border-y border-blue-gray-100 bg-blue-gray-50/50">
+                                    <p
+                                        class="block font-sans text-sm antialiased font-normal leading-none text-blue-gray-900 opacity-70">
+                                        Email Address
+                                    </p>
+                                </th>
+                                <th class="p-4 border-y border-blue-gray-100 bg-blue-gray-50/50">
+                                    <p
+                                        class="block font-sans text-sm antialiased font-normal leading-none text-blue-gray-900 opacity-70">
+                                        Phone Number
+                                    </p>
+                                </th>
+                                <th class="p-4 border-y border-blue-gray-100 bg-blue-gray-50/50">
+                                    <p
+                                        class="block font-sans text-sm antialiased font-normal leading-none text-blue-gray-900 opacity-70">
+                                        Date Added
+                                    </p>
+                                </th>
+                                <th class="p-4 border-y border-blue-gray-100 bg-blue-gray-50/50">
+                                    <p
+                                        class="block font-sans text-sm antialiased font-normal leading-none text-blue-gray-900 opacity-70">
+                                    </p>
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="even:bg-slate-50">
+                                <td class="p-4 border-b border-blue-gray-50">
+                                    <p
+                                        class="block font-sans text-sm antialiased font-medium leading-normal text-blue-gray-900">
+                                        Chike James Edward
+                                    </p>
+                                </td>
+                                <td class="p-4 border-b border-blue-gray-50">
+                                    <p
+                                        class="block font-sans text-sm antialiased font-normal leading-normal truncate text-blue-gray-900 opacity-70">
+                                        chike@gmail.com
+                                    </p>
+                                </td>
+                                <td class="p-4 border-b border-blue-gray-50">
+                                    <p
+                                        class="block font-sans text-sm antialiased font-normal leading-normal truncate text-blue-gray-900 opacity-70">
+                                        09038036844
+                                    </p>
+                                </td>
+                                <td class="p-4 border-b border-blue-gray-50">
+                                    <p
+                                        class="block font-sans text-sm antialiased font-normal leading-normal text-blue-gray-900 opacity-70">
+                                        23/04/18
+                                    </p>
+                                </td>
+                                <td class="p-4 border-b border-blue-gray-50">
+                                    <div class="flex gap-1">
+                                        <a href="#" title="Download CV"
+                                            class="px-2 py-1 rounded-lg hover:bg-gray-900/10">
+                                            <i class="fa-solid fa-eye"></i>
+                                        </a>
+                                        <a href="#" title="Download CV"
+                                            class="px-2 py-1 rounded-lg hover:bg-gray-900/10">
+                                            <i class="fa-solid fa-pen"></i>
+                                        </a>
+                                        <a href="#" title="Delete Application"
+                                            class="px-2 py-1 rounded-lg hover:bg-gray-900/10">
+                                            <i class="fa-solid fa-trash"></i>
+                                        </a>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="even:bg-slate-50">
+                                <td class="p-4 border-b border-blue-gray-50">
+                                    <p
+                                        class="block font-sans text-sm antialiased font-medium leading-normal text-blue-gray-900">
+                                        Chike James Edward
+                                    </p>
+                                </td>
+                                <td class="p-4 border-b border-blue-gray-50">
+                                    <p
+                                        class="block font-sans text-sm antialiased font-normal leading-normal truncate text-blue-gray-900 opacity-70">
+                                        chike@gmail.com
+                                    </p>
+                                </td>
+                                <td class="p-4 border-b border-blue-gray-50">
+                                    <p
+                                        class="block font-sans text-sm antialiased font-normal leading-normal truncate text-blue-gray-900 opacity-70">
+                                        09038036844
+                                    </p>
+                                </td>
+                                <td class="p-4 border-b border-blue-gray-50">
+                                    <p
+                                        class="block font-sans text-sm antialiased font-normal leading-normal text-blue-gray-900 opacity-70">
+                                        23/04/18
+                                    </p>
+                                </td>
+                                <td class="p-4 border-b border-blue-gray-50">
+                                    <div class="flex gap-1">
+                                        <a href="#" title="Download CV"
+                                            class="px-2 py-1 rounded-lg hover:bg-gray-900/10">
+                                            <i class="fa-solid fa-eye"></i>
+                                        </a>
+                                        <a href="#" title="Download CV"
+                                            class="px-2 py-1 rounded-lg hover:bg-gray-900/10">
+                                            <i class="fa-solid fa-pen"></i>
+                                        </a>
+                                        <a href="#" title="Delete Application"
+                                            class="px-2 py-1 rounded-lg hover:bg-gray-900/10">
+                                            <i class="fa-solid fa-trash"></i>
+                                        </a>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="even:bg-slate-50">
+                                <td class="p-4 border-b border-blue-gray-50">
+                                    <p
+                                        class="block font-sans text-sm antialiased font-medium leading-normal text-blue-gray-900">
+                                        Chike James Edward
+                                    </p>
+                                </td>
+                                <td class="p-4 border-b border-blue-gray-50">
+                                    <p
+                                        class="block font-sans text-sm antialiased font-normal leading-normal truncate text-blue-gray-900 opacity-70">
+                                        chike@gmail.com
+                                    </p>
+                                </td>
+                                <td class="p-4 border-b border-blue-gray-50">
+                                    <p
+                                        class="block font-sans text-sm antialiased font-normal leading-normal truncate text-blue-gray-900 opacity-70">
+                                        09038036844
+                                    </p>
+                                </td>
+                                <td class="p-4 border-b border-blue-gray-50">
+                                    <p
+                                        class="block font-sans text-sm antialiased font-normal leading-normal text-blue-gray-900 opacity-70">
+                                        23/04/18
+                                    </p>
+                                </td>
+                                <td class="p-4 border-b border-blue-gray-50">
+                                    <div class="flex gap-1">
+                                        <a href="#" title="Download CV"
+                                            class="px-2 py-1 rounded-lg hover:bg-gray-900/10">
+                                            <i class="fa-solid fa-eye"></i>
+                                        </a>
+                                        <a href="#" title="Download CV"
+                                            class="px-2 py-1 rounded-lg hover:bg-gray-900/10">
+                                            <i class="fa-solid fa-pen"></i>
+                                        </a>
+                                        <a href="#" title="Delete Application"
+                                            class="px-2 py-1 rounded-lg hover:bg-gray-900/10">
+                                            <i class="fa-solid fa-trash"></i>
+                                        </a>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="even:bg-slate-50">
+                                <td class="p-4 border-b border-blue-gray-50">
+                                    <p
+                                        class="block font-sans text-sm antialiased font-medium leading-normal text-blue-gray-900">
+                                        Chike James Edward
+                                    </p>
+                                </td>
+                                <td class="p-4 border-b border-blue-gray-50">
+                                    <p
+                                        class="block font-sans text-sm antialiased font-normal leading-normal truncate text-blue-gray-900 opacity-70">
+                                        chike@gmail.com
+                                    </p>
+                                </td>
+                                <td class="p-4 border-b border-blue-gray-50">
+                                    <p
+                                        class="block font-sans text-sm antialiased font-normal leading-normal truncate text-blue-gray-900 opacity-70">
+                                        09038036844
+                                    </p>
+                                </td>
+                                <td class="p-4 border-b border-blue-gray-50">
+                                    <p
+                                        class="block font-sans text-sm antialiased font-normal leading-normal text-blue-gray-900 opacity-70">
+                                        23/04/18
+                                    </p>
+                                </td>
+                                <td class="p-4 border-b border-blue-gray-50">
+                                    <div class="flex gap-1">
+                                        <a href="#" title="Download CV"
+                                            class="px-2 py-1 rounded-lg hover:bg-gray-900/10">
+                                            <i class="fa-solid fa-eye"></i>
+                                        </a>
+                                        <a href="#" title="Download CV"
+                                            class="px-2 py-1 rounded-lg hover:bg-gray-900/10">
+                                            <i class="fa-solid fa-pen"></i>
+                                        </a>
+                                        <a href="#" title="Delete Application"
+                                            class="px-2 py-1 rounded-lg hover:bg-gray-900/10">
+                                            <i class="fa-solid fa-trash"></i>
+                                        </a>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="even:bg-slate-50">
+                                <td class="p-4 border-b border-blue-gray-50">
+                                    <p
+                                        class="block font-sans text-sm antialiased font-medium leading-normal text-blue-gray-900">
+                                        Chike James Edward
+                                    </p>
+                                </td>
+                                <td class="p-4 border-b border-blue-gray-50">
+                                    <p
+                                        class="block font-sans text-sm antialiased font-normal leading-normal truncate text-blue-gray-900 opacity-70">
+                                        chike@gmail.com
+                                    </p>
+                                </td>
+                                <td class="p-4 border-b border-blue-gray-50">
+                                    <p
+                                        class="block font-sans text-sm antialiased font-normal leading-normal truncate text-blue-gray-900 opacity-70">
+                                        09038036844
+                                    </p>
+                                </td>
+                                <td class="p-4 border-b border-blue-gray-50">
+                                    <p
+                                        class="block font-sans text-sm antialiased font-normal leading-normal text-blue-gray-900 opacity-70">
+                                        23/04/18
+                                    </p>
+                                </td>
+                                <td class="p-4 border-b border-blue-gray-50">
+                                    <div class="flex gap-1">
+                                        <a href="#" title="Download CV"
+                                            class="px-2 py-1 rounded-lg hover:bg-gray-900/10">
+                                            <i class="fa-solid fa-eye"></i>
+                                        </a>
+                                        <a href="#" title="Download CV"
+                                            class="px-2 py-1 rounded-lg hover:bg-gray-900/10">
+                                            <i class="fa-solid fa-pen"></i>
+                                        </a>
+                                        <a href="#" title="Delete Application"
+                                            class="px-2 py-1 rounded-lg hover:bg-gray-900/10">
+                                            <i class="fa-solid fa-trash"></i>
+                                        </a>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="flex items-center justify-between p-4 border-t border-blue-gray-50">
+                    <p class="block font-sans text-sm antialiased font-normal leading-normal text-blue-gray-900">
+                        Page 1 of 10
+                    </p>
+                    <div class="flex gap-2">
+                        <button
+                            class="select-none rounded-lg border border-gray-900 py-2 px-4 text-center align-middle font-sans text-xs font-bold uppercase text-gray-900 transition-all hover:opacity-75 focus:ring focus:ring-gray-300 active:opacity-[0.85] disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
+                            type="button">
+                            Previous
+                        </button>
+                        <button
+                            class="select-none rounded-lg border border-gray-900 py-2 px-4 text-center align-middle font-sans text-xs font-bold uppercase text-gray-900 transition-all hover:opacity-75 focus:ring focus:ring-gray-300 active:opacity-[0.85] disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
+                            type="button">
+                            Next
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+</body>
+
+
+</html>

@@ -87,7 +87,7 @@
                 General
             </div>
             <a href="index.html"
-                class="flex items-center gap-2 px-4 py-2 duration-150 ease-out rounded-md bg-t_green/30 hover:bg-t_green/30">
+                class="flex items-center gap-2 px-4 py-2 duration-150 ease-out rounded-md hover:bg-t_green/30">
                 <i class="fa-solid fa-gauge"></i>
                 Dashboard
             </a>
@@ -103,15 +103,17 @@
                 </label>
 
                 <!-- Hidden Checkbox for Toggle -->
-                <input type="checkbox" id="job_listing" class="hidden peer">
+                <input type="checkbox" id="job_listing" class="hidden peer" checked>
 
                 <!-- Dropdown Menu -->
                 <div class="relative left-0 hidden w-full mt-2 overflow-hidden font-normal peer-checked:block">
-                    <a href="add_job.html" class="flex items-center gap-2 px-4 py-2 pl-8 rounded-md hover:bg-t_green/20">
+                    <a href="add_job.html"
+                        class="flex items-center gap-2 px-4 py-2 pl-8 rounded-md hover:bg-t_green/20">
                         <i class="fa-solid fa-plus"></i>
                         Add New Job
                     </a>
-                    <a href="edit_delete_job.html" class="flex items-center gap-2 px-4 py-2 pl-8 rounded-md hover:bg-t_green/20">
+                    <a href="edit_delete_job.html"
+                        class="flex items-center gap-2 px-4 py-2 pl-8 rounded-md hover:bg-t_green/20">
                         <i class="fa-solid fa-pen-to-square"></i>
                         Edit/Delete Job
                     </a>
@@ -122,16 +124,19 @@
                     </a>
                 </div>
             </div>
-            <a href="job_assitance.html" class="flex items-center gap-2 px-4 py-2 duration-150 ease-out rounded-md hover:bg-t_green/20">
+            <a href="job_assitance.html"
+                class="flex items-center gap-2 px-4 py-2 duration-150 ease-out rounded-md hover:bg-t_green/20">
                 <i class="fa-solid fa-headset"></i>
                 Job Assistance Request
             </a>
-            <a href="recruiter_request.html" class="flex items-center gap-2 px-4 py-2 duration-150 ease-out rounded-md hover:bg-t_green/30">
+            <a href="recruiter_request.html"
+                class="flex items-center gap-2 px-4 py-2 duration-150 ease-out rounded-md hover:bg-t_green/30">
                 <i class="fa-solid fa-user-tie"></i>
                 Recruiter Request
             </a>
 
-            <a href="career_consultation.html" class="flex items-center gap-2 px-4 py-2 duration-150 ease-out rounded-md hover:bg-t_green/30">
+            <a href="career_consultation.html"
+                class="flex items-center gap-2 px-4 py-2 duration-150 ease-out rounded-md hover:bg-t_green/30">
                 <i class="fa-solid fa-calendar-check"></i>
                 Career Consultaions
             </a>
@@ -140,7 +145,7 @@
                     User Management
                 </div>
                 <a href="add_admin.html"
-                    class="flex items-center gap-2 px-4 py-2 duration-150 ease-out rounded-md hover:bg-t_green/30">
+                    class="flex items-center gap-2 px-4 py-2 duration-150 ease-out rounded-md bg-t_green/30 hover:bg-t_green/30">
                     <i class="fa-solid fa-plus"></i>
                     Add Admin
                 </a>
@@ -196,7 +201,7 @@
                         }
                     </script>
                 </div>
-                <h2 class="text-xl font-semibold">Dashboard</h2>
+                <h2 class="text-xl font-semibold">Admin Management</h2>
             </div>
             <div class="flex items-center gap-2">
                 <div class="relative">
@@ -282,102 +287,69 @@
 
             </div>
         </div>
-        <div class="flex flex-col flex-auto gap-4">
-            <section class="grid gap-4 p-4 m-4" style="grid-template-columns: repeat(auto-fill,minmax(200px,1fr));">
-                <div class="flex flex-col gap-2 p-4 rounded-lg shadow-sm bg-t_green/90 text-t_dark/80">
-                    <i class="mb-1 text-3xl fas text-t_navy fa-briefcase"></i>
-                    <p class="leading-[0.5em] text-4xl font-bold text-t_navy">
-                        5,554
-                    </p>
-                    <span class="text-sm font-semibold">Job Posted</span>
+        <section class="items-start w-full px-4 py-10 mx-auto my-6 md:max-w-screen-lg ">
+            <form class="w-full p-6 mx-auto bg-white rounded-lg shadow-lg md:max-w-2xl">
+                <h2 class="mb-4 text-2xl font-semibold text-gray-800">Add Admin</h2>
+
+                <div id="grid-2" class="grid gap-4">
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700">Full Name</label>
+                        <input type="text" name="admin_name"
+                            class="w-full p-2 mb-4 border rounded-md focus:ring focus:ring-blue-300" required>
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700">Email Address</label>
+                        <input type="email" name="admin_email"
+                            class="w-full p-2 mb-4 border rounded-md focus:ring focus:ring-blue-300" required>
+                    </div>
+                    <div class="md:col-span-2">
+                        <label class="block text-sm font-medium text-gray-700">Phone Number</label>
+                        <input type="tel" name="admin_phone"
+                            class="w-full p-2 mb-4 border rounded-md focus:ring focus:ring-blue-300" required>
+                    </div>
+
+                    <!-- Permissions Section -->
+                    <div class="md:col-span-2">
+                        <label class="block text-sm font-medium text-gray-700">Permissions</label>
+                        <div class="grid grid-cols-2 gap-2 p-4 border rounded-md">
+                            <label class="flex items-center space-x-2">
+                                <input type="checkbox" name="permissions[]" value="manage_jobs" class="w-4 h-4">
+                                <span>Manage Jobs</span>
+                            </label>
+                            <label class="flex items-center space-x-2">
+                                <input type="checkbox" name="permissions[]" value="manage_users" class="w-4 h-4">
+                                <span>Manage Users</span>
+                            </label>
+                            <label class="flex items-center space-x-2">
+                                <input type="checkbox" name="permissions[]" value="view_statistics" class="w-4 h-4">
+                                <span>View Statistics</span>
+                            </label>
+                            <label class="flex items-center space-x-2">
+                                <input type="checkbox" name="permissions[]" value="manage_permissions" class="w-4 h-4">
+                                <span>Manage Permissions</span>
+                            </label>
+                            <label class="flex items-center space-x-2">
+                                <input type="checkbox" name="permissions[]" value="edit_settings" class="w-4 h-4">
+                                <span>Edit Settings</span>
+                            </label>
+                            <label class="flex items-center space-x-2">
+                                <input type="checkbox" name="permissions[]" value="publish_jobs" class="w-4 h-4">
+                                <span>Publish Jobs</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <button type="submit"
+                        class="w-full p-2 text-white transition bg-blue-600 rounded-md md:col-span-2 hover:bg-blue-700">
+                        Add Admin
+                    </button>
                 </div>
-                <div class="flex flex-col gap-2 p-4 rounded-lg shadow-sm bg-t_navy/90 text-white/80">
-                    <i class="mb-1 text-3xl text-white fas fa-file-lines"></i>
-                    <p class="leading-[0.5em] text-4xl font-bold text-white">
-                        832
-                    </p>
-                    <span class="text-sm font-semibold">Total Applications</span>
-                </div>
-                <div class="flex flex-col gap-2 p-4 rounded-lg shadow-sm bg-t_blue/90 text-white/80">
-                    <i class="mb-1 text-3xl text-white fas fa-calendar-check"></i>
-                    <p class="leading-[0.5em] text-4xl font-bold text-white">
-                        29
-                    </p>
-                    <span class="text-sm font-semibold">Consultation Bookings</span>
-                </div>
-                <div class="flex flex-col gap-2 p-4 rounded-lg shadow-sm bg-t_purple/90 text-white/80">
-                    <i class="mb-1 text-3xl text-white fas fa-building"></i>
-                    <p class="leading-[0.5em] text-4xl font-bold text-white">
-                        1,298
-                    </p>
-                    <span class="text-sm font-semibold">Recruiter Job Requests</span>
-                </div>
-            </section>
-            <section class="grid flex-auto grid-cols-1 gap-6 p-4 mx-4 md:grid-cols-1 lg:grid-cols-2">
-                <!-- Applications Over Time -->
-                <div class="p-4 bg-white rounded-lg shadow lg:col-span-2">
-                    <h2 class="mb-4 text-lg font-semibold">Applications Over Time</h2>
-                    <div id="applicationsChart"></div>
-                </div>
-                <!-- Recruiter Requests Over Time -->
-                <div class="p-4 bg-white rounded-lg shadow">
-                    <h2 class="mb-4 text-lg font-semibold">Recruiter Requests</h2>
-                    <div id="recruiterRequestsChart"></div>
-                </div>
-                <!-- Consultation Over Time -->
-                <div class="p-4 bg-white rounded-lg shadow">
-                    <h2 class="mb-4 text-lg font-semibold">Consultation Over Time</h2>
-                    <div id="consultationChart"></div>
-                </div>
-            </section>
-        </div>
+
+            </form>
+        </section>
+
     </main>
 
-    <script>
-        const data = {
-            applications: [10, 25, 15, 30, 40, 60, 80],
-            recruiterRequests: [5, 15, 10, 18, 25, 30, 50],
-            consultations: [50, 30, 20], // Example: 50 for Successful, 30 Pending, 20 Rejected
-            categories: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul"],
-        };
-
-
-        document.addEventListener("DOMContentLoaded", function () {
-            const data = {
-                applications: [10, 25, 15, 30, 40, 60, 80],
-                consultations: [5, 15, 10, 18, 25, 30, 50],
-                recruiterRequests: [50, 30, 20], // Example: 50 for Successful, 30 Pending, 20 Rejected
-                categories: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul"],
-            };
-
-            // Line Chart for Applications Over Time
-            new ApexCharts(document.querySelector("#applicationsChart"), {
-                chart: { type: "line", height: 250 },
-                series: [{ name: "Applications", data: data.applications }],
-                xaxis: { categories: data.categories },
-                colors: ["#38bdf8"],
-            }).render();
-            
-
-            // Bar Chart for Consultation Over Time
-            new ApexCharts(document.querySelector("#consultationChart"), {
-                chart: { type: "bar", height: 250 },
-                series: [{ name: "Consultations", data: data.consultations }],
-                xaxis: { categories: data.categories },
-                colors: ["#facc15"],
-            }).render();
-            
-            // Pie Chart for Recruiter Status
-            new ApexCharts(document.querySelector("#recruiterRequestsChart"), {
-                chart: { type: "pie", height: 250 },
-                series: data.recruiterRequests,
-                labels: ["Accepted", "Pending", "Rejected"],
-                colors: ["#10b981", "#fbbf24", "#ef4444"],
-                legend: { position: "bottom" }, // Moves legend below for better readability
-            }).render();
-            
-        });      
-    </script>
 </body>
 
 

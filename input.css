@@ -19,6 +19,15 @@
   }
 }
 @layer components {
+  #grid-2{
+    grid-template-columns: 1fr;
+  }
+  @media (min-width: theme("screens.md")){
+    #grid-2{
+      grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
+    }
+    
+  }
   header nav {
     @apply flex gap-2 text-sm flex-wrap items-center;
   }
